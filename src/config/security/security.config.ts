@@ -1,0 +1,328 @@
+import { Application, Request, Response, NextFunction } from 'express';
+import helmet from 'helmet';
+import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import slowDown from 'express-slow-down';
+import mongoSanitize from 'express-mongo-sanitize';
+import hpp from 'hpp';
+import compression from 'compression';
+import express from 'express';
+import logger from './logger.config';
+
+class SecurityConfig {
+  // Configuração do Helmet - Proteção de Headers HTTP
+  static configureHelmet(app: Application): void {
+    app.use(
+      helmet({
+        contentSecurityPolicy: {
+          directives: {
+            defaultSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'"],
+            scriptSrc: ["'self'"],
+            imgSrc: ["'self'", 'data:', 'https:'],
+            connectSrc: ["'self'", 'https://api.perplexity.ai'],
+            fontSrc: ["'self'"],
+            objectSrc: ["'none'"],
+            mediaSrc: ["'self'"],
+            frameSrc: ["'none'"],
+          },
+        },
+        crossOriginEmbedderPolicy: true,
+        crossOriginOpenerPolicy: true,
+        crossOriginResourcePolicy: { policy: 'cross-origin' },
+        dnsPrefetchControl: true,
+        frameguard: { action: 'deny' },
+        hidePoweredBy: true,
+        hsts: {
+          maxAge: 31536000,
+          includeSubDomains: true,
+          preload: true,
+        },
+        ieNoOpen: true,
+        noSniff: true,
+        referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
+        xssFilter: true,
+      })
+    );
+  }
+
+  // Configuração do CORS
+  static configureCORS(app: Application): void {
+    const allowedOrigins = process.env.CORS_ORIGIN?.split(',') || ['http://localhost:3000'];
+    
+    app.use(
+      cors({
+        origin: (origin, callback) => {
+          // Permitir requisições sem origin (mobile apps, Postman, etc)
+          if (!origin) return callback(null, true);
+          
+          if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV === 'development') {
+            callback(null, true);
+          } else {
+            callback(new Error('Origem não permitida pelo CORS'));
+          }
+        },
+        credentials: process.env.CORS_CREDENTIALS === 'true',
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+        allowedHeaders: [
+          'Content-Type',
+          'Authorization',
+          'X-Requested-With',
+          'X-API-Key',
+          'X-Request-ID',
+        ],
+        exposedHeaders: ['X-Total-Count', 'X-Page-Count'],
+        maxAge: 86400, // 24 horas
+      })
+    );
+  }
+
+  // Rate Limiting Global
+  static configureRateLimit(app: Application): void {
+    const limiter = rateLimit({
+      windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '900000'), // 15 minutos
+      max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || '100'),
+      message: {
+        success: false,
+        message: 'Muitas requisições deste IP, tente novamente mais tarde.',
+        retryAfter: '15 minutos'
+      },
+      standardHeaders: true,
+      legacyHeaders: false,
+      skipSuccessfulRequests: process.env.RATE_LIMIT_SKIP_SUCCESS === 'true',
+      handler: (req, res) => {
+        logger.warn(`Rate limit excedido: ${req.ip}`);
+        res.status(429).json({
+          success: false,
+          message: 'Muitas requisições. Tente novamente mais tarde.',
+        });
+      },
+    });
+
+    app.use(limiter);
+  }
+
+  // Rate Limiting para autenticação (mais restritivo)
+  static authRateLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutos
+    max: 5, // 5 tentativas
+    message: {
+      success: false,
+      message: 'Muitas tentativas de login. Tente novamente em 15 minutos.',
+    },
+    skipSuccessfulRequests: true,
+  });
+
+  // Rate Limiting para IA (prevenir abuso)
+  static aiRateLimiter = rateLimit({
+    windowMs: 60 * 1000, // 1 minuto
+    max: 10, // 10 mensagens por minuto
+    message: {
+      success: false,
+      message: 'Muitas mensagens enviadas. Aguarde um momento.',
+    },
+  });
+
+  // Slow Down (reduz velocidade antes do rate limit)
+  static configureSlowDown(app: Application): void {
+    const speedLimiter = slowDown({
+      windowMs: 15 * 60 * 1000,
+      delayAfter: 50,
+      delayMs: 500,
+    });
+
+    app.use(speedLimiter);
+  }
+
+  // Proteção contra NoSQL Injection
+  static configureSanitization(app: Application): void {
+    app.use(
+      mongoSanitize({
+        replaceWith: '_',
+        onSanitize: ({ req, key }) => {
+          logger.warn(`Tentativa de injection detectada: ${key} em ${req.ip}`);
+        },
+      })
+    );
+  }
+
+  // Proteção contra HTTP Parameter Pollution
+  static configureHPP(app: Application): void {
+    app.use(
+      hpp({
+        whitelist: ['conversationId', 'limit', 'page', 'sort'],
+      })
+    );
+  }
+
+  // Compressão de resposta
+  static configureCompression(app: Application): void {
+    app.use(
+      compression({
+        filter: (req, res) => {
+          if (req.headers['x-no-compression']) {
+            return false;
+          }
+          return compression.filter(req, res);
+        },
+        level: 6,
+        threshold: 1024,
+      })
+    );
+  }
+
+  // Limite de tamanho de payload
+  static configureBodyParser(app: Application): void {
+    app.use(express.json({ limit: '10mb' }));
+    app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+  }
+
+  // Request ID para rastreamento
+  static configureRequestId(app: Application): void {
+    app.use((req: Request, res: Response, next: NextFunction) => {
+      const requestId = req.headers['x-request-id'] || 
+        `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+      req.headers['x-request-id'] = requestId as string;
+      res.setHeader('X-Request-ID', requestId);
+      next();
+    });
+  }
+
+  // Timeout de requisições
+  static configureTimeout(app: Application): void {
+    app.use((req: Request, res: Response, next: NextFunction) => {
+      const timeout = setTimeout(() => {
+        if (!res.headersSent) {
+          logger.error(`Request timeout: ${req.method} ${req.path}`);
+          res.status(408).json({
+            success: false,
+            message: 'Tempo de requisição excedido',
+          });
+        }
+      }, 30000); // 30 segundos
+
+      res.on('finish', () => clearTimeout(timeout));
+      next();
+    });
+  }
+
+  // Bloqueio de rotas não existentes
+  static configureNotFound(app: Application): void {
+    app.use((req: Request, res: Response) => {
+      logger.warn(`Rota não encontrada: ${req.method} ${req.path} - IP: ${req.ip}`);
+      res.status(404).json({
+        success: false,
+        message: 'Rota não encontrada',
+        path: req.path,
+      });
+    });
+  }
+
+  // Headers de segurança customizados
+  static configureCustomHeaders(app: Application): void {
+    app.use((req: Request, res: Response, next: NextFunction) => {
+      res.setHeader('X-Content-Type-Options', 'nosniff');
+      res.setHeader('X-Frame-Options', 'DENY');
+      res.setHeader('X-XSS-Protection', '1; mode=block');
+      res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+      res.setHeader('Permissions-Policy', 'geolocation=(), microphone=(), camera=()');
+      res.removeHeader('X-Powered-By');
+      next();
+    });
+  }
+
+  // Logging de requisições suspeitas
+  static configureSuspiciousActivityLogger(app: Application): void {
+    app.use((req: Request, res: Response, next: NextFunction) => {
+      const suspiciousPatterns = [
+        /(\.\.|\/etc\/|\/proc\/|\/sys\/)/i,
+        /(union.*select|insert.*into|drop.*table)/i,
+        /(<script|javascript:|onerror=)/i,
+        /(\.\.\/|\.\.\\)/,
+      ];
+
+      const url = req.originalUrl || req.url;
+      const body = JSON.stringify(req.body);
+
+      suspiciousPatterns.forEach((pattern) => {
+        if (pattern.test(url) || pattern.test(body)) {
+          logger.warn('Atividade suspeita detectada:', {
+            ip: req.ip,
+            method: req.method,
+            path: req.path,
+            userAgent: req.headers['user-agent'],
+          });
+        }
+      });
+
+      next();
+    });
+  }
+
+  // Cache Control para rotas específicas
+  static configureCacheControl(app: Application): void {
+    app.use((req: Request, res: Response, next: NextFunction) => {
+      // Rotas que não devem ser cacheadas
+      if (req.path.startsWith('/api/auth') || req.path.startsWith('/api/ai')) {
+        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+        res.setHeader('Pragma', 'no-cache');
+        res.setHeader('Expires', '0');
+      } else {
+        // Rotas públicas podem ter cache
+        res.setHeader('Cache-Control', 'public, max-age=300');
+      }
+      next();
+    });
+  }
+
+  // HATEOAS - Adiciona links de navegação nas respostas
+  static addHATEOASLinks(data: any, req: Request, resourceType: string): any {
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    
+    const links: any = {
+      self: `${baseUrl}${req.originalUrl}`,
+    };
+
+    if (resourceType === 'conversation') {
+      links.messages = `${baseUrl}/api/ai/conversations/${data.id}`;
+      links.delete = `${baseUrl}/api/ai/conversations/${data.id}`;
+    }
+
+    if (resourceType === 'conversations') {
+      links.create = `${baseUrl}/api/ai/chat`;
+    }
+
+    if (resourceType === 'user') {
+      links.conversations = `${baseUrl}/api/ai/conversations`;
+      links.profile = `${baseUrl}/api/auth/me`;
+    }
+
+    return {
+      ...data,
+      _links: links,
+    };
+  }
+
+  // Aplicar todas as configurações de segurança
+  static applyAll(app: Application): void {
+    logger.info('🔒 Aplicando configurações de segurança...');
+
+    this.configureCustomHeaders(app);
+    this.configureHelmet(app);
+    this.configureCORS(app);
+    this.configureBodyParser(app);
+    this.configureSanitization(app);
+    this.configureHPP(app);
+    this.configureCompression(app);
+    this.configureRequestId(app);
+    this.configureRateLimit(app);
+    this.configureSlowDown(app);
+    this.configureSuspiciousActivityLogger(app);
+    this.configureCacheControl(app);
+    this.configureTimeout(app);
+
+    logger.info('✅ Configurações de segurança aplicadas com sucesso');
+  }
+}
+
+export default SecurityConfig;

@@ -1,0 +1,167 @@
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 14:11:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 14:11:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 14:11:36"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 7f08ca3d-7901-4653-96db-126dbe3366e9","service":"perplexity-api","timestamp":"2025-12-04 14:16:03"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa ff5ac98c-50c7-47ed-8baa-3a84cdde2cd9","service":"perplexity-api","timestamp":"2025-12-04 14:44:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 14:52:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 14:52:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 14:52:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 14:52:17"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 14:52:17"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 14:52:17"}
+{"level":"info","message":"Treinamento concluído: manual-evento-teste.txt","service":"perplexity-api","timestamp":"2025-12-04 14:52:32"}
+{"level":"info","message":"Query RAG processada: O que o documento diz sobre o evento ou credenciamento?","service":"perplexity-api","timestamp":"2025-12-04 14:55:07"}
+{"level":"info","message":"Query RAG processada: O que o documento diz sobre o evento ou credenciamento?","service":"perplexity-api","timestamp":"2025-12-04 14:56:22"}
+{"level":"info","message":"Query RAG processada: O que o documento diz sobre o credenciamento do evento?","service":"perplexity-api","timestamp":"2025-12-04 15:04:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 15:14:54"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 15:14:54"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 15:14:54"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 15:20:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 15:20:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 15:20:42"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 734cacbb-94ef-44ff-b2ac-f0afe6a9235f","service":"perplexity-api","timestamp":"2025-12-04 15:21:24"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 35a21e7e-8e1b-46f7-8ffe-17d6de902fdb","service":"perplexity-api","timestamp":"2025-12-04 16:07:38"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa ef030b4b-7434-4b5a-9fe1-79f8164f7954","service":"perplexity-api","timestamp":"2025-12-04 16:08:43"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 16:11:45"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 16:11:45"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 16:11:45"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:28:50"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:28:50"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:28:50"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:29:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:29:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:29:13"}
+{"level":"info","message":"Treinamento concluído: manual-evento-teste.txt","service":"perplexity-api","timestamp":"2025-12-04 17:29:59"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0065, saved: $0.0235 (78.4%)","service":"perplexity-api","timestamp":"2025-12-04 17:30:47"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa f6cb1210-05c6-4665-85a6-c83f50321cb3","service":"perplexity-api","timestamp":"2025-12-04 17:30:47"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0066, saved: $0.0234 (78.0%)","service":"perplexity-api","timestamp":"2025-12-04 17:31:10"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 55d3e4d6-40b0-42a7-9379-1f1d567944f2","service":"perplexity-api","timestamp":"2025-12-04 17:31:10"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0066, saved: $0.0234 (78.1%)","service":"perplexity-api","timestamp":"2025-12-04 17:31:49"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa bda3ac4d-8935-4ce2-8442-66ef756aa887","service":"perplexity-api","timestamp":"2025-12-04 17:31:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:35:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:35:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:35:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:35:35"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:35:35"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:35:35"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:37:39"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:37:39"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:37:39"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:37:51"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:37:51"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:37:51"}
+{"level":"info","message":"Treinamento concluído: manual-evento-teste.txt","service":"perplexity-api","timestamp":"2025-12-04 17:38:30"}
+{"level":"info","message":"Query RAG processada: qual o preço do ingresso vip?","service":"perplexity-api","timestamp":"2025-12-04 17:39:08"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0077, saved: $0.0223 (74.3%)","service":"perplexity-api","timestamp":"2025-12-04 17:39:44"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 2c495f4a-0bac-4f11-b5f0-c5f02348d99e","service":"perplexity-api","timestamp":"2025-12-04 17:39:44"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-04 17:42:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-04 17:42:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-04 17:42:24"}
+{"level":"info","message":"SYSTEM MESSAGE ENVIADA PARA LLM:\nVocê SÓ pode responder com base neste contexto de documentos internos. Use apenas as informações presentes no contexto. Se o contexto não trouxer a resposta, diga claramente que o documento não contém essa informação e NÃO use conhecimento externo ou da internet.\n\nContexto dos documentos:\nTítulo: Manual de Operação do Evento XPTO\r\n\r\nÁrea: Credenciamento\r\nProcedimento: O credenciamento começa às 8h.\r\nUse 3 guichês para check-in e 2 filas separadas.\r\nNão esquecer de verificar documentos oficiais.\r","service":"perplexity-api","timestamp":"2025-12-04 17:42:37"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0066, saved: $0.0234 (77.9%)","service":"perplexity-api","timestamp":"2025-12-04 17:42:42"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 362cd2f5-c29f-41eb-a932-eabf9733a56b","service":"perplexity-api","timestamp":"2025-12-04 17:42:42"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 14:47:23"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 14:47:23"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 14:47:23"}
+{"level":"info","message":"Treinamento concluído: teste-doc.txt","service":"perplexity-api","timestamp":"2025-12-05 14:49:07"}
+{"level":"info","message":"Query RAG processada: qual o titulo e o autor?","service":"perplexity-api","timestamp":"2025-12-05 14:50:17"}
+{"level":"info","message":"SYSTEM MESSAGE ENVIADA PARA LLM:\nVocê SÓ pode responder com base neste contexto de documentos internos. Use apenas as informações presentes no contexto. Se o contexto não trouxer a resposta, diga claramente que o documento não contém essa informação e NÃO use conhecimento externo ou da internet.\n\nContexto dos documentos:\nTítulo: Manual de Operação do Evento XPTO\r\n\r\nÁrea: Credenciamento\r\nProcedimento: O credenciamento começa às 8h.\r\nUse 3 guichês para check-in e 2 filas separadas.\r\nNão esquecer de verificar documentos oficiais.\r","service":"perplexity-api","timestamp":"2025-12-05 14:52:43"}
+{"level":"info","message":"RAG Savings - hypothetic: $0.0300, actual: $0.0056, saved: $0.0244 (81.2%)","service":"perplexity-api","timestamp":"2025-12-05 14:52:47"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa c2d079b9-090e-48d4-b8f2-42d110d2c9ca","service":"perplexity-api","timestamp":"2025-12-05 14:52:47"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:24:12"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:24:12"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:24:12"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:25:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:25:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:25:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:26:01"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:26:01"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:26:01"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:07"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:07"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:07"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:28"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:28"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:28"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:27:50"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:27:50"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:27:50"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:28:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:28:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:28:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:28:30"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:28:30"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:28:30"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:28:50"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:28:50"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:28:50"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:29:22"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:29:22"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:29:22"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:30:03"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:30:03"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:30:03"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 15:30:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 15:30:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 15:30:37"}
+{"level":"info","message":"Treinamento concluído: teste-doc.txt","service":"perplexity-api","timestamp":"2025-12-05 15:31:25"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa dd5a605d-c925-4a0c-b40d-e4fae2601713","service":"perplexity-api","timestamp":"2025-12-05 15:32:23"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 66ccc048-4484-4bea-8761-251c4763842f","service":"perplexity-api","timestamp":"2025-12-05 15:35:25"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:08:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:08:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:08:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:09:34"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:09:34"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:09:34"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:09:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:09:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:09:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:10:17"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:10:17"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:10:17"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 90e0f237-6294-4118-a18c-a723b4570e67","service":"perplexity-api","timestamp":"2025-12-05 16:11:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:18:28"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:18:28"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:18:28"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:18:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:18:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:18:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:19:09"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:19:09"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:19:09"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:19:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:19:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:19:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:20:20"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:20:20"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:20:20"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:20:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:20:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:20:49"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 81ffdc58-949e-4eea-bf83-fa2401ab6eda","service":"perplexity-api","timestamp":"2025-12-05 16:21:03"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 16:28:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 16:28:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 16:28:42"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 3d1865e3-ce4d-4bef-8672-d554a0dc31a3","service":"perplexity-api","timestamp":"2025-12-05 16:28:59"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 17:05:48"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 17:05:48"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 17:05:48"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 17:05:55"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 17:05:55"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 17:05:55"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-05 17:05:59"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-05 17:05:59"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-05 17:05:59"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 06786902-7a30-4df0-881b-c22098656f5b","service":"perplexity-api","timestamp":"2025-12-05 17:07:10"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa f7c46be2-8a15-4e6e-b465-2df7912a05ce","service":"perplexity-api","timestamp":"2025-12-05 17:08:07"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 387da7cd-618f-4ed1-bc7d-9a3842ba088d","service":"perplexity-api","timestamp":"2025-12-05 17:09:18"}
+{"level":"info","message":"Mensagem processada para usuário ebe914b3-a336-498f-a01b-5b8549967f1c na conversa 116205b1-3304-458f-be0f-1c9ef79ca488","service":"perplexity-api","timestamp":"2025-12-05 17:10:44"}
