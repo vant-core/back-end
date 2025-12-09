@@ -8,11 +8,11 @@
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "prisma generate && tsc",
+    "build": "npx --yes prisma generate && tsc",
     "start": "node dist/server.js",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:generate": "prisma generate",
-    "prisma:deploy": "prisma migrate deploy"
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:generate": "npx prisma generate",
+    "prisma:deploy": "npx prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
