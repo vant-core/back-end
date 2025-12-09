@@ -14,8 +14,13 @@ class ConversationService {
   }
 
   async getConversation(conversationId: string, userId: string): Promise<ConversationWithMessages> {
-    const conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, userId },
+    const conversation = await prisma.conversation.findUnique({
+      where: {
+        id_userId: {  
+          id: conversationId,
+          userId
+        }
+      },
       include: {
         messages: { orderBy: { createdAt: 'asc' } }
       }
@@ -40,25 +45,46 @@ class ConversationService {
     });
   }
 
-  async addMessage(conversationId: string, role: string, content: string): Promise<Message> {
-    const message = await prisma.message.create({
-      data: { conversationId, role, content }
-    });
+  async addMessage(
+  conversationId: string, 
+  userId: string, 
+  role: string, 
+  content: string | null  // 👈 Permite null
+): Promise<Message> {
+  await prisma.conversation.findUniqueOrThrow({
+    where: {
+      id_userId: {
+        id: conversationId,
+        userId
+      }
+    }
+  });
 
-    await prisma.conversation.update({
-      where: { id: conversationId },
-      data: { updatedAt: new Date() }
-    });
+  const message = await prisma.message.create({
+    data: { 
+      conversationId, 
+      role, 
+      content: content || null  // ✅ Aceita null explicitamente
+    }
+  });
 
-    return message;
-  }
+  await prisma.conversation.update({
+    where: { id: conversationId },
+    data: { updatedAt: new Date() }
+  });
+
+  return message;
+}
 
   async deleteConversation(conversationId: string, userId: string): Promise<void> {
-    const conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, userId }
+    await prisma.conversation.findUniqueOrThrow({
+      where: {
+        id_userId: {
+          id: conversationId,
+          userId
+        }
+      }
     });
-
-    if (!conversation) throw new Error('Conversa não encontrada');
 
     await prisma.conversation.delete({
       where: { id: conversationId }

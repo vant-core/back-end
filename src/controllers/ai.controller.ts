@@ -1,7 +1,6 @@
 import { Response, NextFunction } from 'express';
-import PerplexityService from '../services/perplexity.service';
+import PerplexityService from '../services/openAi.service';
 import ConversationService from '../services/conversation.service';
-import RagService from '../services/rag.service';
 import { AuthRequest, ChatMessageDTO } from '../types/user';
 import SecurityConfig from '../config/security/security.config';
 import logger from '../config/security/logger.config';
@@ -16,6 +15,7 @@ class AIController {
       let conversation;
       let conversationHistory: any[] = [];
 
+      // Recupera ou cria conversa
       if (conversationId) {
         conversation = await ConversationService.getConversation(conversationId, userId);
         conversationHistory = conversation.messages.slice(-10);
@@ -23,60 +23,87 @@ class AIController {
         conversation = await ConversationService.createConversation(userId);
       }
 
-      // RAG — pegar chunks relevantes
-      const ragChunks = RagService.search(message);
-      const ragContext = ragChunks.length
-        ? ragChunks.map((c: { text: string }) => c.text).join('\n\n')
-        : null;
+      // Salva mensagem do usuário
+      await ConversationService.addMessage(conversation.id, userId, 'user', message);
 
-      console.log('ragChunks length:', ragChunks.length);
-      console.log('ragContext sample:', ragContext?.slice(0, 200));
-
-      await ConversationService.addMessage(conversation.id, 'user', message);
-
-      // injeta RAG como “instrucao” antes da pergunta
-      if (ragContext) {
-        conversationHistory.push({
-          role: 'user',
-          content:
-            'Use ONLY the following internal document context to answer the next question:\n\n' +
-            ragContext +
-            '\n\nIf the answer is explicitly stated here, respond directly without asking for more context.'
-        });
-      }
-
+      // 🔥 Chamada para a IA (agora com userId)
       const aiResponse = await PerplexityService.chat(
         message,
-        conversationHistory,
-        ragContext // <– passa aqui também
+        userId, // 🔥 NOVO: passa userId
+        conversationHistory
       );
 
-      await ConversationService.addMessage(conversation.id, 'assistant', aiResponse.content);
+      // 🔥 CASO 1: ARQUIVO GERADO
+      if (aiResponse.file) {
+        const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.name}.${aiResponse.file.type}`;
+        
+        await ConversationService.addMessage(
+          conversation.id, 
+          userId, 
+          'assistant', 
+          messageContent
+        );
 
-      cacheManager.delete(`cache:${userId}:/api/ai/conversations`);
+        res.json({
+          success: true,
+          data: {
+            conversationId: conversation.id,
+            message: aiResponse.content,
+            file: aiResponse.file, // 🔥 Informações do arquivo
+            usage: aiResponse.usage
+          }
+        });
+        return;
+      }
 
-      logger.info(`Mensagem processada para usuário ${userId} na conversa ${conversation.id}`);
+      // 🔥 CASO 2: AÇÃO DE WORKSPACE
+      if (aiResponse.workspace) {
+        await ConversationService.addMessage(
+          conversation.id, 
+          userId, 
+          'assistant', 
+          aiResponse.content
+        );
 
-      const conversationWithLinks = SecurityConfig.addHATEOASLinks(
-        {
-          conversationId: conversation.id,
-          message: aiResponse.content,
-          usage: aiResponse.usage
-        },
-        req,
-        'conversation'
+        res.json({
+          success: true,
+          data: {
+            conversationId: conversation.id,
+            message: aiResponse.content,
+            workspace: aiResponse.workspace, // 🔥 Dados do workspace
+            usage: aiResponse.usage
+          }
+        });
+        return;
+      }
+
+      // 🔥 CASO 3: RESPOSTA NORMAL
+      await ConversationService.addMessage(
+        conversation.id, 
+        userId, 
+        'assistant', 
+        aiResponse.content
       );
 
       res.json({
         success: true,
-        data: conversationWithLinks
+        data: {
+          conversationId: conversation.id,
+          message: aiResponse.content,
+          usage: aiResponse.usage
+        }
       });
+
+      // Limpa cache
+      cacheManager.delete(`cache:${userId}:/api/ai/conversations`);
+
+      logger.info(`Mensagem processada para usuário ${userId} na conversa ${conversation.id}`);
+
     } catch (error) {
       logger.error('Erro ao processar chat:', error);
       next(error);
     }
   }
-
 
   async getConversations(req: AuthRequest, res: Response, next: NextFunction): Promise<void> {
     try {

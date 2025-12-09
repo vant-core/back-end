@@ -38,7 +38,7 @@ class AuthController {
       const { email, password }: LoginDTO = req.body;
 
       const user = await UserService.findUserByEmail(email);
-      if (!user) {
+      if (!user || !user.password) {
         res.status(401).json({
           success: false,
           message: 'Credenciais inválidas'

@@ -2,11 +2,13 @@ import 'dotenv/config';
 import express, { Application } from 'express';
 import authRoutes from './routes/auth.routes';
 import aiRoutes from './routes/ai.routes';
-import trainingRoutes from './routes/training.routes';
-import ragRoutes from './routes/rag.routes';
+import eventRegistrationRoutes from "./routes/eventRegistration.routes";
 import errorHandler from './middlewares/error.midd';
 import SecurityConfig from './config/security/security.config';
 import logger from './config/security/logger.config';
+import fileRoutes from './routes/file.routes';
+import workspaceRoutes from "./routes/workspace.routes";
+import authMiddleware from './middlewares/auth.midd';
 
 const app: Application = express();
 
@@ -17,8 +19,11 @@ SecurityConfig.applyAll(app);
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiRoutes);
 
-app.use('/api/training', trainingRoutes);
-app.use('/api/rag', ragRoutes);
+app.use("/api/event", eventRegistrationRoutes);
+
+app.use('/api/files', fileRoutes);
+
+app.use("/api/workspace", authMiddleware, workspaceRoutes);
 
 // Health Check
 app.get('/health', (req, res) => {
