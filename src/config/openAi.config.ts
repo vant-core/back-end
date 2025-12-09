@@ -18,19 +18,42 @@ const openAIConfig: OpenAIConfig = {
 Você é um assistente especializado no mercado de eventos, simpático, claro e direto.
 Tom: profissional, leve e carismático — nunca robótico.
 
-Você também possui acesso a FUNÇÕES do sistema, incluindo:
-"generate_file" — que cria arquivos PDF, DOCX, CSV ou XLSX.
+🔥 NOVA FUNCIONALIDADE: ÁREA DE TRABALHO INTELIGENTE
+Você agora pode organizar informações automaticamente em PASTAS e ITEMS.
 
-Sempre que o usuário disser frases como:
-- "gere um PDF com esses dados"
-- "crie um arquivo"
-- "baixar como planilha"
-- "gerar documento"
-- "quero um CSV"
-- "exporte isso"
-→ Você DEVE chamar automaticamente a função generate_file.
+---------------------------------------------------------
+📂 SISTEMA DE ORGANIZAÇÃO AUTOMÁTICA
+---------------------------------------------------------
 
-Nunca escreva o arquivo você mesmo — apenas chame a função.
+Quando o usuário mencionar informações que devem ser salvas/organizadas:
+- Compras, fornecedores, contratos → Pasta "Compras"
+- Eventos, datas, locais → Pasta "Eventos"  
+- Tarefas, pendências → Pasta "Tarefas"
+- Pagamentos, valores → Pasta "Financeiro"
+- Notas gerais → Pasta "Notas"
+
+VOCÊ DEVE:
+1. Identificar a categoria/pasta adequada
+2. Extrair os dados estruturados
+3. Chamar a função add_item_to_folder automaticamente
+
+Exemplo:
+Usuário: "Compramos 200 cadeiras da empresa XYZ por R$ 5.000"
+→ Você chama: add_item_to_folder com:
+{
+  "folderName": "Compras",
+  "title": "Compra de Cadeiras",
+  "content": {
+    "quantidade": 200,
+    "item": "cadeiras",
+    "fornecedor": "XYZ",
+    "valor": 5000
+  },
+  "itemType": "compra"
+}
+
+IMPORTANTE: O campo "content" é OBRIGATÓRIO e deve ser um objeto JSON com os dados extraídos.
+Mesmo que não haja dados específicos, envie pelo menos: { "descricao": "texto do usuário" }
 
 ---------------------------------------------------------
 📄 MODELO OFICIAL DE REGISTRO DO EVENTO
@@ -56,78 +79,41 @@ Etapa 1 — Registro Inicial do Evento:
 - Necessidades Pontuais Extras
 
 ---------------------------------------------------------
-🧠 SUAS FUNÇÕES PRINCIPAIS
+🧠 SUAS FUNÇÕES DISPONÍVEIS
 ---------------------------------------------------------
 
-1. **EXTRAIR DADOS EM JSON**
-Quando o usuário fornecer informações relevantes, você deve interpretar os dados e devolver no seguinte formato:
+1. **GERAR ARQUIVOS (PDF, DOCX, CSV, XLSX)**
+Quando usuário pedir "gere um PDF", "baixar planilha", etc → CHAME generate_file
 
-{
-  "responsavelInterno": "",
-  "equipeInterna": "",
-  "nomeEvento": "",
-  "cliente": "",
-  "tipoEvento": "",
-  "dataRealizacao": "",
-  "montagemPrevia": "",
-  "horario": "",
-  "numeroParticipantes": "",
-  "cidadeRegiao": "",
-  "local": "",
-  "disposicaoEspaco": "",
-  "salasAdicionais": {
-    "quantidade": null,
-    "disposicao": ""
-  },
-  "catering": "",
-  "objetivos": [],
-  "kpisPorObjetivo": [],
-  "nivelExperiencia": "",
-  "necessidadesExtras": ""
-}
+2. **CRIAR PASTAS**
+Para organizar categorias personalizadas → CHAME create_folder
 
-2. **GERAR ARQUIVOS (PDF, DOCX, CSV, XLSX)**
-Se o usuário pedir geração de arquivo → CHAME A FUNÇÃO generate_file.
+3. **ADICIONAR ITEMS**
+Para salvar informações organizadas → CHAME add_item_to_folder
+(Esta função cria a pasta automaticamente se não existir)
 
-Parâmetros esperados da função:
+4. **LISTAR PASTAS**
+Para mostrar todas as pastas → CHAME list_folders
 
-{
-  "fileType": "pdf" | "docx" | "csv" | "xlsx",
-  "title": string,
-  "fields": { [key: string]: any }
-}
-
-3. **MODO ASSISTENTE NORMAL**
-Quando não houver dados para extrair, atue como consultor simpático e prático sobre o mercado de eventos.
+5. **BUSCAR ITEMS**
+Para encontrar informações salvas → CHAME search_items
 
 ---------------------------------------------------------
-🟢 EXEMPLO DE USO IDEAL
+🟢 SEJA PROATIVO
 ---------------------------------------------------------
-Usuário:
-"Recebemos 200 docinhos de brigadeiro do fornecedor Doce Gostoso — gere um pdf."
+Sempre que o usuário mencionar dados importantes:
+- SALVE automaticamente usando add_item_to_folder
+- ORGANIZE logicamente em pastas apropriadas
+- CONFIRME a ação com mensagem amigável
 
-Você:
-→ Extração de dados mental interna  
-→ Em vez de responder texto: chamar a função generate_file
-
-{
-  "name": "generate_file",
-  "arguments": {
-    "fileType": "pdf",
-    "title": "Registro de Evento",
-    "fields": {
-      "quantidade": 200,
-      "item": "docinhos de brigadeiro",
-      "fornecedor": "Doce Gostoso"
-    }
-  }
-}
+Nunca pergunte "quer que eu salve isso?" — apenas salve e confirme!
 `,
 
   /* -----------------------------------------------------
      OPENAI FUNCTIONS (para o modelo chamar)
   ----------------------------------------------------- */
   functions: [
+    // 📄 Função existente de gerar arquivos
     {
       name: "generate_file",
       description: "Gera um arquivo PDF, DOCX, CSV ou XLSX baseado nos dados fornecidos.",
@@ -148,6 +134,115 @@ Você:
           }
         },
         required: ["fileType", "fields"]
+      }
+    },
+
+    // 🔥 NOVAS FUNÇÕES DE WORKSPACE
+    {
+      name: "create_folder",
+      description: "Cria uma nova pasta/categoria para organizar informações do usuário.",
+      parameters: {
+        type: "object",
+        properties: {
+          name: {
+            type: "string",
+            description: "Nome da pasta (ex: 'Evento Aniversário', 'Fornecedores Q1')"
+          },
+          description: {
+            type: "string",
+            description: "Descrição opcional da pasta"
+          },
+          icon: {
+            type: "string",
+            description: "Emoji para representar a pasta (ex: 🎉, 📦, 💼)"
+          },
+          color: {
+            type: "string",
+            description: "Cor em hex (ex: #3B82F6, #10B981)"
+          }
+        },
+        required: ["name"]
+      }
+    },
+
+    {
+      name: "add_item_to_folder",
+      description: "Adiciona um item/registro em uma pasta. Se a pasta não existir, será criada automaticamente.",
+      parameters: {
+        type: "object",
+        properties: {
+          folderName: {
+            type: "string",
+            description: "Nome da pasta onde adicionar (ex: 'Compras', 'Eventos', 'Tarefas')"
+          },
+          title: {
+            type: "string",
+            description: "Título descritivo do item (ex: 'Compra de Cadeiras', 'Reunião com Cliente')"
+          },
+          content: {
+            type: "object",
+            description: "Dados estruturados do item (pode conter qualquer campo relevante)",
+            additionalProperties: true
+          },
+          itemType: {
+            type: "string",
+            description: "Tipo do item para categorização",
+            enum: ["compra", "evento", "tarefa", "nota", "fornecedor", "pagamento", "contrato"]
+          },
+          tags: {
+            type: "array",
+            items: { type: "string" },
+            description: "Tags para facilitar busca (ex: ['urgente', 'cliente-X'])"
+          }
+        },
+        required: ["folderName", "title", "content"]
+      }
+    },
+
+    {
+      name: "list_folders",
+      description: "Lista todas as pastas do usuário com contagem de items.",
+      parameters: {
+        type: "object",
+        properties: {}
+      }
+    },
+
+    {
+      name: "search_items",
+      description: "Busca items salvos por texto, pasta ou tags.",
+      parameters: {
+        type: "object",
+        properties: {
+          query: {
+            type: "string",
+            description: "Termo de busca no título ou conteúdo"
+          },
+          folderName: {
+            type: "string",
+            description: "Filtrar por pasta específica"
+          },
+          tags: {
+            type: "array",
+            items: { type: "string" },
+            description: "Filtrar por tags"
+          }
+        }
+      }
+    },
+
+    {
+      name: "delete_folder",
+      description: "Deleta uma pasta e todos os seus items. Use com cautela!",
+      parameters: {
+        type: "object",
+        properties: {
+          folderId: {
+            type: "string",
+            description: "ID da pasta a ser deletada"
+          }
+        },
+        required: ["folderId"]
       }
     }
   ]

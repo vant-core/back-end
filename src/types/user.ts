@@ -87,7 +87,6 @@ export interface EventRegistrationDTO {
 
 /* -------------------------------------------------------
    CONVERSATION TYPES
-   (para garantir consistência com Prisma + controller)
 ------------------------------------------------------- */
 export interface MessageDTO {
   id: string;
@@ -119,5 +118,63 @@ export interface ChatApiResponse {
       total_tokens: number;
     };
     _links?: any;
+  };
+}
+
+/* -------------------------------------------------------
+   🔥 WORKSPACE / FOLDERS (NOVO)
+------------------------------------------------------- */
+
+export interface Folder {
+  id: string;
+  userId: string;
+  name: string;
+  description?: string;
+  icon: string;
+  color: string;
+  parentId?: string | null;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface FolderItem {
+  id: string;
+  folderId: string;
+  userId: string;
+  title: string;
+  content: Record<string, any>;
+  itemType?: string;
+  tags: string[];
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface CreateFolderDTO {
+  name: string;
+  description?: string;
+  icon?: string;
+  color?: string;
+  parentId?: string;
+}
+
+export interface CreateItemDTO {
+  folderId: string;
+  title: string;
+  content: Record<string, any>;
+  itemType?: string;
+  tags?: string[];
+}
+
+export interface FolderWithCount extends Folder {
+  itemCount: number;
+  subFolders?: Folder[];
+}
+
+export interface FolderItemWithFolder extends FolderItem {
+  folder?: {
+    id: string;
+    name: string;
+    icon: string;
+    color: string;
   };
 }

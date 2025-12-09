@@ -26,16 +26,16 @@ class AIController {
       // Salva mensagem do usuário
       await ConversationService.addMessage(conversation.id, userId, 'user', message);
 
-      // 🔥 Chamada para a IA
+      // 🔥 Chamada para a IA (agora com userId)
       const aiResponse = await PerplexityService.chat(
         message,
+        userId, // 🔥 NOVO: passa userId
         conversationHistory
       );
 
-      // 🔥 VERIFICA SE É UM ARQUIVO GERADO
+      // 🔥 CASO 1: ARQUIVO GERADO
       if (aiResponse.file) {
-        // Salva a mensagem com informação sobre o arquivo
-        const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.title}.${aiResponse.file.fileType}`;
+        const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.name}.${aiResponse.file.type}`;
         
         await ConversationService.addMessage(
           conversation.id, 
@@ -44,18 +44,20 @@ class AIController {
           messageContent
         );
 
-        // Retorna informações do arquivo para o frontend
         res.json({
           success: true,
           data: {
             conversationId: conversation.id,
             message: aiResponse.content,
-            file: aiResponse.file, // 🔥 Inclui informações do arquivo
+            file: aiResponse.file, // 🔥 Informações do arquivo
             usage: aiResponse.usage
           }
         });
-      } else {
-        // Resposta normal (sem arquivo)
+        return;
+      }
+
+      // 🔥 CASO 2: AÇÃO DE WORKSPACE
+      if (aiResponse.workspace) {
         await ConversationService.addMessage(
           conversation.id, 
           userId, 
@@ -68,10 +70,29 @@ class AIController {
           data: {
             conversationId: conversation.id,
             message: aiResponse.content,
+            workspace: aiResponse.workspace, // 🔥 Dados do workspace
             usage: aiResponse.usage
           }
         });
+        return;
       }
+
+      // 🔥 CASO 3: RESPOSTA NORMAL
+      await ConversationService.addMessage(
+        conversation.id, 
+        userId, 
+        'assistant', 
+        aiResponse.content
+      );
+
+      res.json({
+        success: true,
+        data: {
+          conversationId: conversation.id,
+          message: aiResponse.content,
+          usage: aiResponse.usage
+        }
+      });
 
       // Limpa cache
       cacheManager.delete(`cache:${userId}:/api/ai/conversations`);

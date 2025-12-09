@@ -54,7 +54,7 @@ class FileController {
   /**
    * Lista arquivos gerados (opcional - para debug)
    */
-  async listFiles(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async listFiles(_req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const uploadsDir = path.join(__dirname, '../../uploads');
       const files = fs.readdirSync(uploadsDir);
