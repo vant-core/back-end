@@ -18,7 +18,7 @@ class AIController {
       // Recupera ou cria conversa
       if (conversationId) {
         conversation = await ConversationService.getConversation(conversationId, userId);
-        conversationHistory = conversation.messages.slice(-10); // últimos 10 msgs
+        conversationHistory = conversation.messages.slice(-10);
       } else {
         conversation = await ConversationService.createConversation(userId);
       }
@@ -26,36 +26,58 @@ class AIController {
       // Salva mensagem do usuário
       await ConversationService.addMessage(conversation.id, userId, 'user', message);
 
-
-      // Chamada para a IA — sem RAG
+      // 🔥 Chamada para a IA
       const aiResponse = await PerplexityService.chat(
         message,
         conversationHistory
       );
 
-      // Salva resposta da IA
-     await ConversationService.addMessage(conversation.id, userId, 'assistant', aiResponse.content);
+      // 🔥 VERIFICA SE É UM ARQUIVO GERADO
+      if (aiResponse.file) {
+        // Salva a mensagem com informação sobre o arquivo
+        const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.title}.${aiResponse.file.fileType}`;
+        
+        await ConversationService.addMessage(
+          conversation.id, 
+          userId, 
+          'assistant', 
+          messageContent
+        );
 
+        // Retorna informações do arquivo para o frontend
+        res.json({
+          success: true,
+          data: {
+            conversationId: conversation.id,
+            message: aiResponse.content,
+            file: aiResponse.file, // 🔥 Inclui informações do arquivo
+            usage: aiResponse.usage
+          }
+        });
+      } else {
+        // Resposta normal (sem arquivo)
+        await ConversationService.addMessage(
+          conversation.id, 
+          userId, 
+          'assistant', 
+          aiResponse.content
+        );
+
+        res.json({
+          success: true,
+          data: {
+            conversationId: conversation.id,
+            message: aiResponse.content,
+            usage: aiResponse.usage
+          }
+        });
+      }
 
       // Limpa cache
       cacheManager.delete(`cache:${userId}:/api/ai/conversations`);
 
       logger.info(`Mensagem processada para usuário ${userId} na conversa ${conversation.id}`);
 
-      const conversationWithLinks = SecurityConfig.addHATEOASLinks(
-        {
-          conversationId: conversation.id,
-          message: aiResponse.content,
-          usage: aiResponse.usage
-        },
-        req,
-        'conversation'
-      );
-
-      res.json({
-        success: true,
-        data: conversationWithLinks
-      });
     } catch (error) {
       logger.error('Erro ao processar chat:', error);
       next(error);

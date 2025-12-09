@@ -6,6 +6,8 @@ import eventRegistrationRoutes from "./routes/eventRegistration.routes";
 import errorHandler from './middlewares/error.midd';
 import SecurityConfig from './config/security/security.config';
 import logger from './config/security/logger.config';
+import fileRoutes from './routes/file.routes';
+
 
 const app: Application = express();
 
@@ -18,6 +20,7 @@ app.use('/api/ai', aiRoutes);
 
 app.use("/api/event", eventRegistrationRoutes);
 
+app.use('/api/files', fileRoutes);
 
 // Health Check
 app.get('/health', (req, res) => {

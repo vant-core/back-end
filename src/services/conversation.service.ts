@@ -45,28 +45,36 @@ class ConversationService {
     });
   }
 
-  async addMessage(conversationId: string, userId: string, role: string, content: string): Promise<Message> {
-    // 🔥 Verifica se a conversa pertence ao usuário antes de escrever
-    await prisma.conversation.findUniqueOrThrow({
-      where: {
-        id_userId: {
-          id: conversationId,
-          userId
-        }
+  async addMessage(
+  conversationId: string, 
+  userId: string, 
+  role: string, 
+  content: string | null  // 👈 Permite null
+): Promise<Message> {
+  await prisma.conversation.findUniqueOrThrow({
+    where: {
+      id_userId: {
+        id: conversationId,
+        userId
       }
-    });
+    }
+  });
 
-    const message = await prisma.message.create({
-      data: { conversationId, role, content }
-    });
+  const message = await prisma.message.create({
+    data: { 
+      conversationId, 
+      role, 
+      content: content || null  // ✅ Aceita null explicitamente
+    }
+  });
 
-    await prisma.conversation.update({
-      where: { id: conversationId },
-      data: { updatedAt: new Date() }
-    });
+  await prisma.conversation.update({
+    where: { id: conversationId },
+    data: { updatedAt: new Date() }
+  });
 
-    return message;
-  }
+  return message;
+}
 
   async deleteConversation(conversationId: string, userId: string): Promise<void> {
     await prisma.conversation.findUniqueOrThrow({

@@ -234,7 +234,7 @@ static configureCORS(app: Application): void {
 
   // Headers de segurança customizados
   static configureCustomHeaders(app: Application): void {
-    app.use((req: Request, res: Response, next: NextFunction) => {
+    app.use((_req: Request, res: Response, next: NextFunction) => {
       res.setHeader('X-Content-Type-Options', 'nosniff');
       res.setHeader('X-Frame-Options', 'DENY');
       res.setHeader('X-XSS-Protection', '1; mode=block');
@@ -247,7 +247,7 @@ static configureCORS(app: Application): void {
 
   // Logging de requisições suspeitas
   static configureSuspiciousActivityLogger(app: Application): void {
-    app.use((req: Request, res: Response, next: NextFunction) => {
+    app.use((req: Request, _res: Response, next: NextFunction) => {
       const suspiciousPatterns = [
         /(\.\.|\/etc\/|\/proc\/|\/sys\/)/i,
         /(union.*select|insert.*into|drop.*table)/i,

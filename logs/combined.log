@@ -282,3 +282,53 @@
 {"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 43d904a0-3e36-42eb-978e-9a78a79cc5d3","service":"perplexity-api","timestamp":"2025-12-08 17:32:48"}
 {"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-08 17:34:44"}
 {"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 43d904a0-3e36-42eb-978e-9a78a79cc5d3","service":"perplexity-api","timestamp":"2025-12-08 17:34:47"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 14:12:42"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 14:12:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 14:12:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 14:12:42"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:13:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:13:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:13:42"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:13:42"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa b01251ed-0209-460e-8a6d-fc00b9998122","service":"perplexity-api","timestamp":"2025-12-09 14:13:45"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:20:08"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa b01251ed-0209-460e-8a6d-fc00b9998122","service":"perplexity-api","timestamp":"2025-12-09 14:20:11"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 14:54:48"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 14:54:48"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 14:54:48"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 14:54:48"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:55:49"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa b950715b-fbbf-4135-930a-9a3cc025a3a1","service":"perplexity-api","timestamp":"2025-12-09 14:55:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 14:56:19"}
+{"clientVersion":"5.22.0","level":"error","message":"Erro ao processar chat: \nInvalid `prisma.message.create()` invocation in\nC:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\conversation.service.ts:59:42\n\n  56   }\n  57 });\n  58 \n→ 59 const message = await prisma.message.create({\n       data: {\n         conversationId: \"b950715b-fbbf-4135-930a-9a3cc025a3a1\",\n         role: \"assistant\",\n         content: null,\n     +   conversation: {\n     +     create: ConversationCreateWithoutMessagesInput | ConversationUncheckedCreateWithoutMessagesInput,\n     +     connectOrCreate: ConversationCreateOrConnectWithoutMessagesInput,\n     +     connect: ConversationWhereUniqueInput\n     +   }\n       }\n     })\n\nArgument `conversation` is missing.","name":"PrismaClientValidationError","service":"perplexity-api","stack":"PrismaClientValidationError: \nInvalid `prisma.message.create()` invocation in\nC:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\conversation.service.ts:59:42\n\n  56   }\n  57 });\n  58 \n→ 59 const message = await prisma.message.create({\n       data: {\n         conversationId: \"b950715b-fbbf-4135-930a-9a3cc025a3a1\",\n         role: \"assistant\",\n         content: null,\n     +   conversation: {\n     +     create: ConversationCreateWithoutMessagesInput | ConversationUncheckedCreateWithoutMessagesInput,\n     +     connectOrCreate: ConversationCreateOrConnectWithoutMessagesInput,\n     +     connect: ConversationWhereUniqueInput\n     +   }\n       }\n     })\n\nArgument `conversation` is missing.\n    at wn (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at $n.handleRequestError (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n    at $n.handleAndLogRequestError (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6623)\n    at $n.request (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6307)\n    at l (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:130:9633)\n    at ConversationService.addMessage (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\conversation.service.ts:59:21)\n    at chat (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\controllers\\ai.controller.ts:37:6)","timestamp":"2025-12-09 14:56:20"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 15:03:38"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 15:03:38"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 15:03:38"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 15:03:38"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:04:49"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 0eac2aad-c99e-4674-a8f5-94e113020c8b","service":"perplexity-api","timestamp":"2025-12-09 15:04:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:05:05"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 0eac2aad-c99e-4674-a8f5-94e113020c8b","service":"perplexity-api","timestamp":"2025-12-09 15:05:06"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 15:11:42"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 15:11:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 15:11:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 15:11:42"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 15:12:05"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 15:12:05"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 15:12:05"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 15:12:05"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 15:13:29"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 15:13:29"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 15:13:29"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 15:13:29"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:21:39"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 3f6f9030-ae2f-4444-bb21-fe3b7533a955","service":"perplexity-api","timestamp":"2025-12-09 15:21:43"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:22:00"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa 3f6f9030-ae2f-4444-bb21-fe3b7533a955","service":"perplexity-api","timestamp":"2025-12-09 15:22:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:26:25"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa bce87493-dd67-4549-850f-048e6ea9e6b7","service":"perplexity-api","timestamp":"2025-12-09 15:26:28"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:26:37"}
+{"level":"info","message":"Mensagem processada para usuário 3110651b-d0df-4eb9-b879-de1709069f07 na conversa bce87493-dd67-4549-850f-048e6ea9e6b7","service":"perplexity-api","timestamp":"2025-12-09 15:26:39"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:32:59"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 15:32:59"}
+{"level":"info","message":"Arquivo baixado: Registro_de_Evento_-_teste_4_1765304799309.pdf","service":"perplexity-api","timestamp":"2025-12-09 15:32:59"}
