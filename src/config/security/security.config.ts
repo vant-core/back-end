@@ -20,7 +20,7 @@ class SecurityConfig {
             styleSrc: ["'self'", "'unsafe-inline'"],
             scriptSrc: ["'self'"],
             imgSrc: ["'self'", 'data:', 'https:'],
-            connectSrc: ["'self'", 'https://api.perplexity.ai'],
+            connectSrc: ["'self'", 'https://api.openai.com'],
             fontSrc: ["'self'"],
             objectSrc: ["'none'"],
             mediaSrc: ["'self'"],
@@ -47,35 +47,49 @@ class SecurityConfig {
   }
 
   // Configuração do CORS
-  static configureCORS(app: Application): void {
-    const allowedOrigins = process.env.CORS_ORIGIN?.split(',') || ['http://localhost:3000'];
-    
-    app.use(
-      cors({
-        origin: (origin, callback) => {
-          // Permitir requisições sem origin (mobile apps, Postman, etc)
-          if (!origin) return callback(null, true);
-          
-          if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV === 'development') {
-            callback(null, true);
-          } else {
-            callback(new Error('Origem não permitida pelo CORS'));
-          }
-        },
-        credentials: process.env.CORS_CREDENTIALS === 'true',
-        methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-        allowedHeaders: [
-          'Content-Type',
-          'Authorization',
-          'X-Requested-With',
-          'X-API-Key',
-          'X-Request-ID',
-        ],
-        exposedHeaders: ['X-Total-Count', 'X-Page-Count'],
-        maxAge: 86400, // 24 horas
-      })
-    );
-  }
+ // Configuração do CORS
+static configureCORS(app: Application): void {
+  const defaultOrigins = ['http://localhost:3001'];
+  const envOrigins = process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
+    : [];
+  const allowedOrigins = [...new Set([...defaultOrigins, ...envOrigins])];
+
+  logger.info('CORS allowed origins:', allowedOrigins);
+
+  app.use(
+    cors({
+      origin: (origin, callback) => {
+        logger.info(`CORS request from origin: ${origin}`);
+
+        // Permitir requisições sem origin (Postman, curl, etc)
+        if (!origin) return callback(null, true);
+
+        if (
+          allowedOrigins.includes(origin) ||
+          process.env.NODE_ENV === 'development'
+        ) {
+          return callback(null, true);
+        }
+
+        logger.warn(`Origem bloqueada pelo CORS: ${origin}`);
+        return callback(new Error('Origem não permitida pelo CORS'));
+      },
+      credentials: true, // para cookies / Authorization
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+      allowedHeaders: [
+        'Content-Type',
+        'Authorization',
+        'X-Requested-With',
+        'X-API-Key',
+        'X-Request-ID'
+      ],
+      exposedHeaders: ['X-Total-Count', 'X-Page-Count'],
+      maxAge: 86400
+    })
+  );
+}
+
 
   // Rate Limiting Global
   static configureRateLimit(app: Application): void {

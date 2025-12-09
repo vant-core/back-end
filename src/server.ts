@@ -2,8 +2,7 @@ import 'dotenv/config';
 import express, { Application } from 'express';
 import authRoutes from './routes/auth.routes';
 import aiRoutes from './routes/ai.routes';
-import trainingRoutes from './routes/training.routes';
-import ragRoutes from './routes/rag.routes';
+import eventRegistrationRoutes from "./routes/eventRegistration.routes";
 import errorHandler from './middlewares/error.midd';
 import SecurityConfig from './config/security/security.config';
 import logger from './config/security/logger.config';
@@ -17,8 +16,8 @@ SecurityConfig.applyAll(app);
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiRoutes);
 
-app.use('/api/training', trainingRoutes);
-app.use('/api/rag', ragRoutes);
+app.use("/api/event", eventRegistrationRoutes);
+
 
 // Health Check
 app.get('/health', (req, res) => {

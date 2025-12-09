@@ -1,7 +1,6 @@
 import { Response, NextFunction } from 'express';
-import PerplexityService from '../services/perplexity.service';
+import PerplexityService from '../services/openAi.service';
 import ConversationService from '../services/conversation.service';
-import RagService from '../services/rag.service';
 import { AuthRequest, ChatMessageDTO } from '../types/user';
 import SecurityConfig from '../config/security/security.config';
 import logger from '../config/security/logger.config';
@@ -16,43 +15,29 @@ class AIController {
       let conversation;
       let conversationHistory: any[] = [];
 
+      // Recupera ou cria conversa
       if (conversationId) {
         conversation = await ConversationService.getConversation(conversationId, userId);
-        conversationHistory = conversation.messages.slice(-10);
+        conversationHistory = conversation.messages.slice(-10); // últimos 10 msgs
       } else {
         conversation = await ConversationService.createConversation(userId);
       }
 
-      // RAG — pegar chunks relevantes
-      const ragChunks = RagService.search(message);
-      const ragContext = ragChunks.length
-        ? ragChunks.map((c: { text: string }) => c.text).join('\n\n')
-        : null;
+      // Salva mensagem do usuário
+      await ConversationService.addMessage(conversation.id, userId, 'user', message);
 
-      console.log('ragChunks length:', ragChunks.length);
-      console.log('ragContext sample:', ragContext?.slice(0, 200));
 
-      await ConversationService.addMessage(conversation.id, 'user', message);
-
-      // injeta RAG como “instrucao” antes da pergunta
-      if (ragContext) {
-        conversationHistory.push({
-          role: 'user',
-          content:
-            'Use ONLY the following internal document context to answer the next question:\n\n' +
-            ragContext +
-            '\n\nIf the answer is explicitly stated here, respond directly without asking for more context.'
-        });
-      }
-
+      // Chamada para a IA — sem RAG
       const aiResponse = await PerplexityService.chat(
         message,
-        conversationHistory,
-        ragContext // <– passa aqui também
+        conversationHistory
       );
 
-      await ConversationService.addMessage(conversation.id, 'assistant', aiResponse.content);
+      // Salva resposta da IA
+     await ConversationService.addMessage(conversation.id, userId, 'assistant', aiResponse.content);
 
+
+      // Limpa cache
       cacheManager.delete(`cache:${userId}:/api/ai/conversations`);
 
       logger.info(`Mensagem processada para usuário ${userId} na conversa ${conversation.id}`);
@@ -76,7 +61,6 @@ class AIController {
       next(error);
     }
   }
-
 
   async getConversations(req: AuthRequest, res: Response, next: NextFunction): Promise<void> {
     try {
