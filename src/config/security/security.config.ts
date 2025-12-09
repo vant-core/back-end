@@ -47,49 +47,52 @@ class SecurityConfig {
   }
 
   // Configuração do CORS
- // Configuração do CORS
-static configureCORS(app: Application): void {
-  const defaultOrigins = ['http://localhost:3001'];
-  const envOrigins = process.env.CORS_ORIGIN
-    ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
-    : [];
-  const allowedOrigins = [...new Set([...defaultOrigins, ...envOrigins])];
+  static configureCORS(app: Application): void {
+    const defaultOrigins = [
+      'http://localhost:3001',
+      'https://front-vant.vercel.app'
+    ];
+    
+    const envOrigins = process.env.CORS_ORIGIN
+      ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
+      : [];
+    
+    const allowedOrigins = [...new Set([...defaultOrigins, ...envOrigins])];
 
-  logger.info('CORS allowed origins:', allowedOrigins);
+    logger.info('CORS allowed origins:', allowedOrigins);
 
-  app.use(
-    cors({
-      origin: (origin, callback) => {
-        logger.info(`CORS request from origin: ${origin}`);
+    app.use(
+      cors({
+        origin: (origin, callback) => {
+          logger.info(`CORS request from origin: ${origin}`);
 
-        // Permitir requisições sem origin (Postman, curl, etc)
-        if (!origin) return callback(null, true);
+          // Permitir requisições sem origin (Postman, curl, etc)
+          if (!origin) return callback(null, true);
 
-        if (
-          allowedOrigins.includes(origin) ||
-          process.env.NODE_ENV === 'development'
-        ) {
-          return callback(null, true);
-        }
+          if (
+            allowedOrigins.includes(origin) ||
+            process.env.NODE_ENV === 'development'
+          ) {
+            return callback(null, true);
+          }
 
-        logger.warn(`Origem bloqueada pelo CORS: ${origin}`);
-        return callback(new Error('Origem não permitida pelo CORS'));
-      },
-      credentials: true, // para cookies / Authorization
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-      allowedHeaders: [
-        'Content-Type',
-        'Authorization',
-        'X-Requested-With',
-        'X-API-Key',
-        'X-Request-ID'
-      ],
-      exposedHeaders: ['X-Total-Count', 'X-Page-Count'],
-      maxAge: 86400
-    })
-  );
-}
-
+          logger.warn(`Origem bloqueada pelo CORS: ${origin}`);
+          return callback(new Error('Origem não permitida pelo CORS'));
+        },
+        credentials: true, // para cookies / Authorization
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+        allowedHeaders: [
+          'Content-Type',
+          'Authorization',
+          'X-Requested-With',
+          'X-API-Key',
+          'X-Request-ID'
+        ],
+        exposedHeaders: ['X-Total-Count', 'X-Page-Count'],
+        maxAge: 86400
+      })
+    );
+  }
 
   // Rate Limiting Global
   static configureRateLimit(app: Application): void {
