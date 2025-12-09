@@ -375,3 +375,10 @@
 {"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 16:34:17"}
 {"level":"info","message":"Pastas listadas para usuário 3110651b-d0df-4eb9-b879-de1709069f07","service":"perplexity-api","timestamp":"2025-12-09 16:34:17"}
 {"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 16:36:46"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-09 16:48:57"}
+{"0":"http://localhost:3001","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-09 16:48:57"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-09 16:48:57"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-09 16:48:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 16:49:15"}
+{"level":"info","message":"Pastas listadas para usuário 3110651b-d0df-4eb9-b879-de1709069f07","service":"perplexity-api","timestamp":"2025-12-09 16:49:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-09 16:49:17"}
