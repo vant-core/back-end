@@ -12,7 +12,8 @@
     "start": "node dist/server.js",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:generate": "npx prisma generate",
-    "prisma:deploy": "npx prisma migrate deploy"
+    "render:migrate": "npx prisma migrate deploy"
+
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
