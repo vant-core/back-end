@@ -144,10 +144,11 @@ class SecurityConfig {
   static configureSlowDown(app: Application): void {
   const speedLimiter = slowDown({
     windowMs: 15 * 60 * 1000, // 15 minutos
-    delayAfter: 50,           // começa a atrasar após 50 requisições
-    delayMs: () => 500,       // novo comportamento do express-slow-down v2
-    validate: {
-      delayMs: false,         // desativa o warning crítico no deploy
+    delayAfter: 50,
+    // comportamento antigo recomendado pela própria mensagem
+    delayMs: (used, req) => {
+      const delayAfter = req.slowDown.limit;
+      return (used - delayAfter) * 500;
     },
   });
 
