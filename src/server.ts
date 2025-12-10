@@ -51,7 +51,7 @@ app.use(errorHandler);
 
 // Porta do Render
 const PORT = process.env.PORT || 3000;
-
+//
 app.listen(PORT, () => {
   logger.info(
     `🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`

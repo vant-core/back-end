@@ -47,6 +47,7 @@ app.get('/health', (req, res) => {
 app.use(error_midd_1.default);
 // Porta do Render
 const PORT = process.env.PORT || 3000;
+//
 app.listen(PORT, () => {
     logger_config_1.default.info(`🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`);
 });

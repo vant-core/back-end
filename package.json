@@ -8,12 +8,11 @@
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "npx prisma generate && tsc",
+    "build": "tsc",
     "start": "node dist/server.js",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:generate": "npx prisma generate",
     "render:migrate": "npx prisma migrate deploy"
-
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
@@ -34,12 +33,12 @@
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
     "pdfkit": "^0.17.2",
-    "prisma": "^5.22.0",
     "uuid": "^13.0.0",
     "winston": "^3.18.3",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "prisma": "^5.22.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.17",
