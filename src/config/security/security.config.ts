@@ -142,17 +142,18 @@ class SecurityConfig {
 
   // Slow Down (reduz velocidade antes do rate limit)
   static configureSlowDown(app: Application): void {
-    const speedLimiter = slowDown({
-      windowMs: 15 * 60 * 1000,
-      delayAfter: 50,
-      delayMs: 500,
-      validate: {
-    delayMs: false,
+  const speedLimiter = slowDown({
+    windowMs: 15 * 60 * 1000, // 15 minutos
+    delayAfter: 50,           // começa a atrasar após 50 requisições
+    delayMs: () => 500,       // novo comportamento do express-slow-down v2
+    validate: {
+      delayMs: false,         // desativa o warning crítico no deploy
     },
-    });
+  });
 
-    app.use(speedLimiter);
-  }
+  app.use(speedLimiter);
+}
+
 
   // Proteção contra NoSQL Injection
   static configureSanitization(app: Application): void {
