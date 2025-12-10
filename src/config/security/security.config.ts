@@ -2,7 +2,6 @@ import { Application, Request, Response, NextFunction } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
-// import slowDown from 'express-slow-down';
 import mongoSanitize from 'express-mongo-sanitize';
 import hpp from 'hpp';
 import compression from 'compression';
@@ -139,22 +138,6 @@ class SecurityConfig {
       message: 'Muitas mensagens enviadas. Aguarde um momento.',
     },
   });
-
-  // Slow Down (reduz velocidade antes do rate limit)
-//   static configureSlowDown(app: Application): void {
-//   const speedLimiter = slowDown({
-//     windowMs: 15 * 60 * 1000, // 15 minutos
-//     delayAfter: 50,
-//     // comportamento antigo recomendado pela própria mensagem
-//     delayMs: (used, req) => {
-//       const delayAfter = req.slowDown.limit;
-//       return (used - delayAfter) * 500;
-//     },
-//   });
-
-//   app.use(speedLimiter);
-// }
-
 
   // Proteção contra NoSQL Injection
   static configureSanitization(app: Application): void {
@@ -338,7 +321,6 @@ class SecurityConfig {
     this.configureCompression(app);
     this.configureRequestId(app);
     this.configureRateLimit(app);
-    // this.configureSlowDown(app);
     this.configureSuspiciousActivityLogger(app);
     this.configureCacheControl(app);
     this.configureTimeout(app);
