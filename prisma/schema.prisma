@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
@@ -8,27 +9,27 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  name      String
-  email     String?  @unique
-  phone     String?  @unique
-  password  String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         String   @id @default(uuid())
+  name       String
+  email      String?  @unique
+  phone      String?  @unique
+  password   String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   conversations      Conversation[]
   eventRegistrations EventRegistration[]
-  folders            Folder[]              // 🔥 NOVO
-  folderItems        FolderItem[]          // 🔥 NOVO
+  folders            Folder[]
+  folderItems        FolderItem[]
 }
 
 model Conversation {
-  id        String       @id @default(uuid())
-  userId    String
-  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
-  messages  Message[]
-  createdAt DateTime     @default(now())
-  updatedAt DateTime     @updatedAt
+  id         String        @id @default(uuid())
+  userId     String
+  user       User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages   Message[]
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
 
   eventRegistrations EventRegistration[]
 
@@ -36,30 +37,29 @@ model Conversation {
 }
 
 model Message {
-  id             String       @id @default(uuid())
+  id            String       @id @default(uuid())
   conversationId String
-  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
-  role           String
-  content        String?      @db.Text
-  createdAt      DateTime     @default(now())
+  conversation  Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role          String
+  content       String?      @db.Text
+  createdAt     DateTime     @default(now())
 }
 
 model EventRegistration {
-  id             String        @id @default(uuid())
-  userId         String
+  id            String        @id @default(uuid())
+  userId        String
   conversationId String?
-  data           Json
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
+  data          Json
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
 
-  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  conversation   Conversation? @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  conversation  Conversation? @relation(fields: [conversationId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([conversationId])
 }
 
-// 🔥 NOVO: Tabela de Pastas/Categorias
 model Folder {
   id          String   @id @default(uuid())
   userId      String
@@ -67,27 +67,26 @@ model Folder {
   description String?
   icon        String   @default("📁")
   color       String   @default("#3B82F6")
-  parentId    String?  // Para subpastas (opcional)
+  parentId    String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
-  parent      Folder?      @relation("SubFolders", fields: [parentId], references: [id], onDelete: Cascade)
-  subFolders  Folder[]     @relation("SubFolders")
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent      Folder?  @relation("SubFolders", fields: [parentId], references: [id], onDelete: Cascade)
+  subFolders  Folder[] @relation("SubFolders")
   items       FolderItem[]
 
   @@index([userId])
   @@index([parentId])
 }
 
-// 🔥 NOVO: Tabela de Items dentro das Pastas
 model FolderItem {
   id        String   @id @default(uuid())
   folderId  String
   userId    String
   title     String
-  content   Json     // Dados flexíveis extraídos pela IA
-  itemType  String?  // 'compra', 'evento', 'tarefa', 'nota', etc
+  content   Json
+  itemType  String?
   tags      String[] @default([])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
