@@ -37,6 +37,10 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     logger_config_1.default.info(`🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`);
 });
+console.log("SERVER_STARTING", {
+    node: process.version,
+    env: process.env.NODE_ENV,
+});
 // Tratamento de erros não capturados
 process.on('unhandledRejection', (reason) => {
     logger_config_1.default.error('Unhandled Rejection:', reason);
