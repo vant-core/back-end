@@ -11,6 +11,7 @@ const hpp_1 = __importDefault(require("hpp"));
 const compression_1 = __importDefault(require("compression"));
 const express_1 = __importDefault(require("express"));
 const logger_config_1 = __importDefault(require("./logger.config"));
+//
 class SecurityConfig {
     // Configuração do Helmet - Proteção de Headers HTTP
     static configureHelmet(app) {
