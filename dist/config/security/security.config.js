@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const helmet_1 = __importDefault(require("helmet"));
 const cors_1 = __importDefault(require("cors"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
-const express_slow_down_1 = __importDefault(require("express-slow-down"));
 const express_mongo_sanitize_1 = __importDefault(require("express-mongo-sanitize"));
 const hpp_1 = __importDefault(require("hpp"));
 const compression_1 = __importDefault(require("compression"));
@@ -105,15 +104,6 @@ class SecurityConfig {
             },
         });
         app.use(limiter);
-    }
-    // Slow Down (reduz velocidade antes do rate limit)
-    static configureSlowDown(app) {
-        const speedLimiter = (0, express_slow_down_1.default)({
-            windowMs: 15 * 60 * 1000,
-            delayAfter: 50,
-            delayMs: 500,
-        });
-        app.use(speedLimiter);
     }
     // Proteção contra NoSQL Injection
     static configureSanitization(app) {
@@ -271,7 +261,6 @@ class SecurityConfig {
         this.configureCompression(app);
         this.configureRequestId(app);
         this.configureRateLimit(app);
-        this.configureSlowDown(app);
         this.configureSuspiciousActivityLogger(app);
         this.configureCacheControl(app);
         this.configureTimeout(app);

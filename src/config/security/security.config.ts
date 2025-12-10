@@ -8,6 +8,7 @@ import compression from 'compression';
 import express from 'express';
 import logger from './logger.config';
 
+//
 class SecurityConfig {
   // Configuração do Helmet - Proteção de Headers HTTP
   static configureHelmet(app: Application): void {
