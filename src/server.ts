@@ -12,48 +12,48 @@ import authMiddleware from './middlewares/auth.midd';
 
 const app: Application = express();
 
-// Aplicar todas as configurações de segurança
+// Log inicial do servidor
+console.log("SERVER_STARTING", {
+  node: process.version,
+  env: process.env.NODE_ENV,
+});
+
+// Handlers globais (DEVEM vir ANTES do listen)
+process.on('unhandledRejection', (reason: Error) => {
+  logger.error('Unhandled Rejection:', reason);
+});
+
+process.on('uncaughtException', (error: Error) => {
+  logger.error('Uncaught Exception:', error);
+});
+
+// Aplicar configurações de segurança
 SecurityConfig.applyAll(app);
 
 // Rotas
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiRoutes);
-
 app.use("/api/event", eventRegistrationRoutes);
-
 app.use('/api/files', fileRoutes);
-
 app.use("/api/workspace", authMiddleware, workspaceRoutes);
 
-// Health Check
+// Healthcheck
 app.get('/health', (req, res) => {
-  res.json({ 
-    status: 'ok', 
+  res.json({
+    status: 'ok',
     timestamp: new Date().toISOString(),
-    environment: process.env.NODE_ENV 
+    environment: process.env.NODE_ENV
   });
 });
 
-// Error Handler (deve ser o último middleware)
+// Error middleware (sempre por último)
 app.use(errorHandler);
 
+// Porta do Render
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  logger.info(`🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`);
-});
-
-console.log("SERVER_STARTING", {
-  node: process.version,
-  env: process.env.NODE_ENV,
-});
-// Tratamento de erros não capturados
-process.on('unhandledRejection', (reason: Error) => {
-  logger.error('Unhandled Rejection:', reason);
-  process.exit(1);
-});
-
-process.on('uncaughtException', (error: Error) => {
-  logger.error('Uncaught Exception:', error);
-  process.exit(1);
+  logger.info(
+    `🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`
+  );
 });
