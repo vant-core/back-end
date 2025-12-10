@@ -15,7 +15,19 @@ const file_routes_1 = __importDefault(require("./routes/file.routes"));
 const workspace_routes_1 = __importDefault(require("./routes/workspace.routes"));
 const auth_midd_1 = __importDefault(require("./middlewares/auth.midd"));
 const app = (0, express_1.default)();
-// Aplicar todas as configurações de segurança
+// Log inicial do servidor
+console.log("SERVER_STARTING", {
+    node: process.version,
+    env: process.env.NODE_ENV,
+});
+// Handlers globais (DEVEM vir ANTES do listen)
+process.on('unhandledRejection', (reason) => {
+    logger_config_1.default.error('Unhandled Rejection:', reason);
+});
+process.on('uncaughtException', (error) => {
+    logger_config_1.default.error('Uncaught Exception:', error);
+});
+// Aplicar configurações de segurança
 security_config_1.default.applyAll(app);
 // Rotas
 app.use('/api/auth', auth_routes_1.default);
@@ -23,7 +35,7 @@ app.use('/api/ai', ai_routes_1.default);
 app.use("/api/event", eventRegistration_routes_1.default);
 app.use('/api/files', file_routes_1.default);
 app.use("/api/workspace", auth_midd_1.default, workspace_routes_1.default);
-// Health Check
+// Healthcheck
 app.get('/health', (req, res) => {
     res.json({
         status: 'ok',
@@ -31,22 +43,10 @@ app.get('/health', (req, res) => {
         environment: process.env.NODE_ENV
     });
 });
-// Error Handler (deve ser o último middleware)
+// Error middleware (sempre por último)
 app.use(error_midd_1.default);
+// Porta do Render
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     logger_config_1.default.info(`🚀 Servidor rodando na porta ${PORT} em modo ${process.env.NODE_ENV || 'development'}`);
-});
-console.log("SERVER_STARTING", {
-    node: process.version,
-    env: process.env.NODE_ENV,
-});
-// Tratamento de erros não capturados
-process.on('unhandledRejection', (reason) => {
-    logger_config_1.default.error('Unhandled Rejection:', reason);
-    process.exit(1);
-});
-process.on('uncaughtException', (error) => {
-    logger_config_1.default.error('Uncaught Exception:', error);
-    process.exit(1);
 });
