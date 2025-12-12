@@ -398,3 +398,932 @@
 {"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-10 14:16:09"}
 {"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-10 14:16:09"}
 {"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-10 14:16:09"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:44:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:44:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:44:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:44:37"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:44:51"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:44:51"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:44:51"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:44:51"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:46:22"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:46:22"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:46:22"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:46:22"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:46:58"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:46:58"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:47:16"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:47:16"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:47:44"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:51:11"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:51:11"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:51:30"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:51:30"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:52:57"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:52:57"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:52:57"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:52:57"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:08"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:08"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:08"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:08"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:14"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:14"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:14"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:14"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:19"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:24"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:24"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:34"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:34"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:34"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:34"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 13:53:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 13:53:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 13:53:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 13:53:40"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:54:45"}
+{"level":"info","message":"Mensagem processada para usuário 6f175801-3769-4929-90c1-40f627fc35af na conversa 237555d8-da28-4529-b967-e4adf83dd3f1","service":"perplexity-api","timestamp":"2025-12-11 13:54:50"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:08"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:12"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 13:55:12"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:18"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:18"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:18"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 13:55:25"}
+{"level":"info","message":"Pasta 45aeec69-11c7-4681-8d83-239830b2255a deletada pelo usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 13:55:25"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:28"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:28"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:28"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:28"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:31"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:31"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:31"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:31"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:43"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:43"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:43"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:43"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:44"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:44"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:44"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:44"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:46"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:46"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:46"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:46"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:54"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:54"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:54"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:54"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:04:56"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:04:56"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:04:56"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:04:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:08"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:08"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:08"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:08"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:15"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:18"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:18"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:18"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:18"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:26"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:26"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:26"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:26"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:29"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:29"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:29"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:29"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:31"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:31"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:31"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:31"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:32"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:35"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:35"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:35"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:35"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:40"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:05:55"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:05:55"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:05:55"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:05:55"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:01"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:01"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:01"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:01"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:04"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:15"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:20"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:20"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:20"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:20"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:24"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:24"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:27"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:27"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:27"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:27"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:29"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:29"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:29"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:29"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:30"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:30"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:30"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:30"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:33"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:34"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:34"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:34"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:34"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:37"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:47"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:47"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:47"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:47"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:50"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:50"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:50"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:50"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:55"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:55"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:55"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:55"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:06:56"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:06:56"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:06:56"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:06:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:02"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:02"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:02"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:02"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:05"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:05"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:05"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:05"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:07"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:07"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:07"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:07"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:09"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:09"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:09"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:09"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:18"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:18"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:18"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:18"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:24"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:24"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:26"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:26"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:26"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:26"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:29"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:29"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:29"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:29"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:36"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:37"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:07:42"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:07:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:07:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:07:42"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:04"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:13"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:13"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:37"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:42"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:42"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 14:08:59"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 14:08:59"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 14:08:59"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 14:08:59"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:06:48"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:06:48"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:06:48"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:06:48"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:07:26"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:07:26"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:07:26"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:07:26"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:07:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:07:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:07:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:07:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:11"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:11"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:11"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:11"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:13"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:13"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:15"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:18"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:18"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:18"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:18"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:35"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:35"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:35"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:35"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:36"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:39"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:39"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:39"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:39"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:40"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:42"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:42"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:44"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:44"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:44"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:44"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:47"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:47"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:47"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:47"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:51"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:51"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:51"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:51"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:08:54"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:08:54"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:08:54"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:08:54"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:01"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:01"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:01"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:01"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:04"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:08"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:08"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:08"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:08"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:16"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:16"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:16"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:16"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:18"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:18"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:18"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:18"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:21"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:21"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:21"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:21"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:22"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:22"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:22"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:22"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:24"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:24"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:28"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:28"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:28"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:28"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:30"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:30"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:30"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:30"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:32"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:54"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:54"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:54"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:54"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:56"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:56"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:56"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:09:59"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:09:59"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:09:59"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:09:59"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:10:02"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:10:02"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:10:02"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:10:02"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:10:04"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:10:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:10:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:10:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:38:04"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:38:04"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:38:04"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:38:04"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:38:21"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:38:21"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:38:21"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:38:21"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:39:43"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:39:43"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:39:43"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:39:43"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:40:09"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:40:09"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:40:09"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:40:09"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:40:22"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:40:22"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:40:22"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:40:22"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:43:13"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:43:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:43:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:43:13"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:46:02"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:46:02"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:46:02"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:46:02"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:48:32"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:48:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:48:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:48:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:55:15"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:55:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:55:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:55:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:55:24"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:55:24"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:55:24"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:55:24"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:56:38"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:56:38"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:56:38"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:56:38"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 15:58:39"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 15:58:39"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 15:58:39"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 15:58:39"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 16:00:13"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 16:00:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 16:00:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 16:00:13"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 16:00:15"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 16:00:15"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 16:00:15"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 16:00:15"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-11 16:01:26"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-11 16:01:26"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-11 16:01:26"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-11 16:01:26"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:38:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:38:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:02"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 16:39:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:05"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:05"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:05"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:08"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:08"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:39:08"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:07"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:17"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:17"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:17"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:31"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:31"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:40:31"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:45:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:45:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:46:01"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:46:08"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:48:48"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 16:48:48"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:48:51"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:48:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:49:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:50:35"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:55:33"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:55:36"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 16:55:36"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:56:01"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:56:45"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:57:13"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:59:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 16:59:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:42"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 17:17:42"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:46"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:48"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:48"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:17:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:18:00"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:18:00"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:22:43"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-11 17:22:43"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:22:46"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:22:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-11 17:22:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:32:58"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:32:58"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:32:58"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:32:58"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:52"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:52"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:52"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-12 14:36:52"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:55"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:55"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:55"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:56"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:56"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:56"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:36:57"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:39:20"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:39:20"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:39:51"}
+{"clientVersion":"5.22.0","level":"error","message":"Erro ao processar chat: \nInvalid `prisma.folder.findFirst()` invocation in\nC:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\report\\reportHandlers.ts:30:42\n\n  27 \n  28 if (folderId) {\n  29   // 🔥 Relatório específico de uma pasta\n→ 30   const folder = await prisma.folder.findFirst({\n         where: {\n           id: \"Eventos/Aniversario\",\n           userId: \"6f175801-3769-4929-90c1-40f627fc35af\"\n         },\n         include: {\n           items: true,\n           children: true,\n           ~~~~~~~~\n       ?   user?: true,\n       ?   parent?: true,\n       ?   subFolders?: true\n         }\n       })\n\nUnknown field `children` for include statement on model `Folder`. Available options are marked with ?.","name":"PrismaClientValidationError","service":"perplexity-api","stack":"PrismaClientValidationError: \nInvalid `prisma.folder.findFirst()` invocation in\nC:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\report\\reportHandlers.ts:30:42\n\n  27 \n  28 if (folderId) {\n  29   // 🔥 Relatório específico de uma pasta\n→ 30   const folder = await prisma.folder.findFirst({\n         where: {\n           id: \"Eventos/Aniversario\",\n           userId: \"6f175801-3769-4929-90c1-40f627fc35af\"\n         },\n         include: {\n           items: true,\n           children: true,\n           ~~~~~~~~\n       ?   user?: true,\n       ?   parent?: true,\n       ?   subFolders?: true\n         }\n       })\n\nUnknown field `children` for include statement on model `Folder`. Available options are marked with ?.\n    at wn (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at $n.handleRequestError (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6958)\n    at $n.handleAndLogRequestError (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6623)\n    at $n.request (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:121:6307)\n    at l (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\@prisma\\client\\runtime\\library.js:130:9633)\n    at Object.generateReport (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\report\\reportHandlers.ts:30:22)\n    at OpenAIService.chat (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\services\\openAi.service.ts:414:26)\n    at chat (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\controllers\\ai.controller.ts:30:26)","timestamp":"2025-12-12 14:39:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:42:01"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-12 14:42:01"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:42:15"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:42:17"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:42:40"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:43:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:43:02"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 14:43:02"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:54:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:54:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:54:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:54:40"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:54:46"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:54:46"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:54:46"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:54:46"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:54:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:54:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:54:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:54:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:54:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:54:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:54:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:54:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:55:19"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:55:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:55:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:55:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:55:36"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:55:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:55:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:55:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:56:59"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:56:59"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:56:59"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:56:59"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:58:39"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:58:39"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:58:39"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:58:39"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 14:58:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 14:58:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 14:58:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 14:58:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:01:12"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:01:12"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:01:12"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:01:12"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:01:16"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:01:16"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:01:16"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:01:16"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:09:13"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:09:13"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:09:13"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:09:13"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:09:16"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:09:16"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:09:16"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:09:16"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:09:19"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:09:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:09:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:09:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:10:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:10:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:10:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:10:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:12:21"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:12:21"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:12:21"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:12:21"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:12:34"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:12:34"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:12:34"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:12:34"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:12:47"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:12:47"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:12:47"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:12:47"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:13:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:13:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:13:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:13:40"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:13:56"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:13:56"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:13:56"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:13:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:14:11"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:14:11"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:14:11"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:14:11"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:26:48"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:26:48"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:26:48"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:26:48"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:26:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:26:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:26:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:26:53"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 15:27:30"}
+{"level":"info","message":"Mensagem processada para usuário 6f175801-3769-4929-90c1-40f627fc35af na conversa 033a421b-d328-4e1c-868d-282a66476645","service":"perplexity-api","timestamp":"2025-12-12 15:27:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 15:57:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 15:57:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 15:57:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 15:57:37"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3000","port":3000,"service":"perplexity-api","stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\server.ts:58:5)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)\n    at Module._compile (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-14721788322893237.js:69:33)\n    at node:internal/modules/cjs/loader:1699:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-14721788322893237.js:114:20)","syscall":"listen","timestamp":"2025-12-12 16:00:19"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:00:19"}
+{"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3000","port":3000,"service":"perplexity-api","stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\server.ts:58:5)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)\n    at Module._compile (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-14721788322893237.js:69:33)\n    at node:internal/modules/cjs/loader:1699:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-14721788322893237.js:114:20)","syscall":"listen","timestamp":"2025-12-12 16:00:19"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 16:11:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:13:31"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:13:31"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:13:31"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:13:31"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:13:37"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-12 16:13:37"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:13:56"}
+{"level":"info","message":"Mensagem processada para usuário 6f175801-3769-4929-90c1-40f627fc35af na conversa b150e93f-7edb-4cd9-8c04-de69d54f486d","service":"perplexity-api","timestamp":"2025-12-12 16:13:58"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:14:19"}
+{"level":"info","message":"Mensagem processada para usuário 6f175801-3769-4929-90c1-40f627fc35af na conversa b150e93f-7edb-4cd9-8c04-de69d54f486d","service":"perplexity-api","timestamp":"2025-12-12 16:14:21"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:17:39"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:17:39"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:17:39"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:17:39"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:21:17"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:21:32"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:21:32"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:21:51"}
+{"level":"info","message":"Pastas listadas para usuário 6f175801-3769-4929-90c1-40f627fc35af","service":"perplexity-api","timestamp":"2025-12-12 16:21:51"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:25:42"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:25:42"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:25:42"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:25:42"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:26:20"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:26:45"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:33:55"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:33:55"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:33:55"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:33:55"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:34:32"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:34:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:34:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:34:32"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:35:10"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:37:49"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:37:49"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:37:49"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:37:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:37:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:37:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:37:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:37:52"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:38:38"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:44:33"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:44:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:44:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:44:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:46:05"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:46:05"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:46:05"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:46:05"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:46:20"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:46:20"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:46:20"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:46:20"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:46:33"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:46:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:46:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:46:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:46:34"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:46:34"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:46:34"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:46:34"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:48:29"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:48:29"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:48:29"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:48:29"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:48:32"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:48:32"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:48:32"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:48:32"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:48:58"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:48:58"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:48:58"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:48:58"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:53:20"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:53:20"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:53:20"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:53:20"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:53:40"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:53:40"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:53:40"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:53:40"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:53:55"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:53:55"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:53:55"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:53:55"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:54:26"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:54:26"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:55:38"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:55:38"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:55:38"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:55:38"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 16:55:55"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 16:56:16"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 16:56:16"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 16:56:16"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 16:56:16"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:03:31"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:03:31"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:03:31"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:03:31"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:04:51"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:04:51"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:04:51"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:04:51"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:05:09"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:05:09"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:05:09"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:05:09"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:05:18"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:05:18"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:05:18"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:05:18"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:05:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:07:30"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:07:30"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:07:30"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:07:30"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:08:35"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:08:35"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:08:35"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:08:35"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:08:56"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:08:56"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:08:56"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:08:56"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:09:03"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:09:03"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:09:03"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:09:03"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:09:27"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:11:31"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:11:49"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:15:33"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:15:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:15:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:15:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:15:36"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:15:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:15:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:15:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:16:41"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:16:41"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:16:41"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:16:41"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:16:51"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:16:51"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:16:51"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:16:51"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:16:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:16:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:16:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:16:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:01"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:01"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:01"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:01"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:05"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:05"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:05"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:05"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:06"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:06"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:06"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:06"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:08"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:08"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:08"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:08"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:37"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:37"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:37"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:37"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:41"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:41"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:41"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:41"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:18:43"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:18:43"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:18:43"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:18:43"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:24:21"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:24:21"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:24:21"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:24:21"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:25:02"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:25:02"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:25:02"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:25:02"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3000","port":3000,"service":"perplexity-api","stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\server.ts:58:5)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)\n    at Module._compile (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-029486156818043563.js:69:33)\n    at node:internal/modules/cjs/loader:1699:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-029486156818043563.js:114:20)","syscall":"listen","timestamp":"2025-12-12 17:25:41"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:25:41"}
+{"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3000","port":3000,"service":"perplexity-api","stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\src\\server.ts:58:5)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)\n    at Module._compile (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-029486156818043563.js:69:33)\n    at node:internal/modules/cjs/loader:1699:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\Acer\\AppData\\Local\\Temp\\ts-node-dev-hook-029486156818043563.js:114:20)","syscall":"listen","timestamp":"2025-12-12 17:25:41"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"code":"ERR_IPC_CHANNEL_CLOSED","level":"error","message":"Uncaught Exception: Channel closed","service":"perplexity-api","stack":"Error: Channel closed\n    at process.target.send (node:internal/child_process:753:16)\n    at Object.exports.send (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\ipc.js:17:14)\n    at C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\wrap.js:88:9\n    at Object.nodeDevHook [as .js] (C:\\Users\\Acer\\Desktop\\Vant\\back-end\\node_modules\\ts-node-dev\\lib\\hook.js:61:17)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n    at Module.require (node:internal/modules/cjs/loader:1335:12)\n    at require (node:internal/modules/helpers:136:16)","timestamp":"2025-12-12 17:26:36"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:27:36"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:27:36"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:27:36"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:27:36"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:27:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:28:33"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:28:33"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:28:33"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:28:33"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:28:43"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:28:43"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:28:43"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:28:43"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:28:52"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:28:52"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:28:52"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:28:52"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:28:53"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:28:53"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:28:53"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:28:53"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:32:00"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:32:00"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:32:00"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:32:00"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:34:25"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:34:25"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:34:25"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:34:25"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:34:49"}
+{"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:35:38"}

@@ -33,6 +33,12 @@ class AIController {
         conversationHistory
       );
 
+      console.log('🔍 AIController - Resposta recebida:', {
+        hasFile: !!aiResponse.file,
+        hasWorkspace: !!aiResponse.workspace,
+        hasReport: !!aiResponse.report // 🔥 NOVO
+      });
+
       // 🔥 CASO 1: ARQUIVO GERADO
       if (aiResponse.file) {
         const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.name}.${aiResponse.file.type}`;
@@ -56,7 +62,30 @@ class AIController {
         return;
       }
 
-      // 🔥 CASO 2: AÇÃO DE WORKSPACE
+      // 🔥 CASO 2: RELATÓRIO GERADO (NOVO)
+      if (aiResponse.report) {
+        console.log('📊 AIController - Relatório detectado, enviando ao frontend');
+        
+        await ConversationService.addMessage(
+          conversation.id, 
+          userId, 
+          'assistant', 
+          aiResponse.content
+        );
+
+        res.json({
+          success: true,
+          data: {
+            conversationId: conversation.id,
+            message: aiResponse.content,
+            report: aiResponse.report, // 🔥 Dados do relatório (HTML + data)
+            usage: aiResponse.usage
+          }
+        });
+        return;
+      }
+
+      // 🔥 CASO 3: AÇÃO DE WORKSPACE
       if (aiResponse.workspace) {
         await ConversationService.addMessage(
           conversation.id, 
@@ -77,7 +106,7 @@ class AIController {
         return;
       }
 
-      // 🔥 CASO 3: RESPOSTA NORMAL
+      // 🔥 CASO 4: RESPOSTA NORMAL
       await ConversationService.addMessage(
         conversation.id, 
         userId, 
@@ -177,5 +206,5 @@ class AIController {
     }
   }
 }
-//
+
 export default new AIController();

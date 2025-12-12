@@ -48,12 +48,11 @@ export class WorkspaceHandlers {
     const { 
       folderName, 
       title, 
-      content = {}, // 🔥 DEFAULT: objeto vazio se não vier
+      content = {}, 
       itemType,
       tags = [] 
     } = args;
 
-    // 🔥 VALIDAÇÃO: garantir que content seja um objeto
     const safeContent = typeof content === 'object' && content !== null 
       ? content 
       : { data: String(content) };
@@ -61,18 +60,16 @@ export class WorkspaceHandlers {
     console.log("📦 addItemToFolder chamado com:", { folderName, title, content: safeContent, itemType, tags });
 
     try {
-      // 1. Buscar pasta existente
       let folder = await prisma.folder.findFirst({
         where: {
           userId,
           name: {
             equals: folderName,
-            mode: 'insensitive' // case-insensitive
+            mode: 'insensitive'
           }
         }
       });
 
-      // 2. Se não existir, criar automaticamente
       if (!folder) {
         folder = await prisma.folder.create({
           data: {
@@ -84,13 +81,12 @@ export class WorkspaceHandlers {
         });
       }
 
-      // 3. Criar o item
       const item = await prisma.folderItem.create({
         data: {
           folderId: folder.id,
           userId,
           title,
-          content: safeContent, // 🔥 GARANTIDO QUE É UM OBJETO
+          content: safeContent,
           itemType,
           tags
         },
@@ -176,7 +172,6 @@ export class WorkspaceHandlers {
     const { folderId } = args;
 
     try {
-      // Verificar se a pasta pertence ao usuário
       const folder = await prisma.folder.findFirst({
         where: {
           id: folderId,
@@ -191,7 +186,6 @@ export class WorkspaceHandlers {
         };
       }
 
-      // Buscar items
       const items = await prisma.folderItem.findMany({
         where: {
           folderId,
@@ -234,7 +228,6 @@ export class WorkspaceHandlers {
         orderBy: { createdAt: 'desc' }
       });
 
-      // Transformar para formato mais amigável
       const formattedFolders = folders.map(folder => ({
         ...folder,
         itemCount: folder._count.items
@@ -260,7 +253,6 @@ export class WorkspaceHandlers {
     try {
       const whereClause: any = { userId };
 
-      // Filtrar por pasta
       if (folderName) {
         const folder = await prisma.folder.findFirst({
           where: {
@@ -277,14 +269,12 @@ export class WorkspaceHandlers {
         }
       }
 
-      // Filtrar por tags
       if (tags && tags.length > 0) {
         whereClause.tags = {
           hasSome: tags
         };
       }
 
-      // Buscar items
       let items = await prisma.folderItem.findMany({
         where: whereClause,
         include: {
@@ -300,7 +290,6 @@ export class WorkspaceHandlers {
         orderBy: { createdAt: 'desc' }
       });
 
-      // Filtrar por query de texto (título ou conteúdo)
       if (query) {
         items = items.filter(item => {
           const titleMatch = item.title.toLowerCase().includes(query.toLowerCase());
@@ -322,13 +311,12 @@ export class WorkspaceHandlers {
   }
 
   /**
-   * 🔥 Deleta uma pasta (e seus items)
+   * 🔥 Deleta uma pasta e seus items
    */
   static async deleteFolder(userId: string, args: any) {
     const { folderId } = args;
 
     try {
-      // Verificar se a pasta pertence ao usuário
       const folder = await prisma.folder.findFirst({
         where: {
           id: folderId,
@@ -343,7 +331,6 @@ export class WorkspaceHandlers {
         };
       }
 
-      // Deletar pasta (cascade irá deletar os items)
       await prisma.folder.delete({
         where: { id: folderId }
       });
@@ -366,7 +353,6 @@ export class WorkspaceHandlers {
     const { itemId } = args;
 
     try {
-      // Verificar se o item pertence ao usuário
       const item = await prisma.folderItem.findFirst({
         where: {
           id: itemId,
@@ -381,7 +367,6 @@ export class WorkspaceHandlers {
         };
       }
 
-      // Deletar item
       await prisma.folderItem.delete({
         where: { id: itemId }
       });
@@ -397,9 +382,85 @@ export class WorkspaceHandlers {
     }
   }
 
-  /**
-   * 🎨 Helper: Define ícone baseado no tipo do item
-   */
+   static async resolveFolderPath(userId: string, path: string, icon?: string, color?: string) {
+    const segments = path.split("/").map(s => s.trim()).filter(Boolean);
+
+    let parentId: string | null = null;
+    let currentFolder = null;
+
+    for (const name of segments) {
+      currentFolder = await prisma.folder.findFirst({
+        where: {
+          userId,
+          name: { equals: name, mode: "insensitive" },
+          parentId
+        }
+      });
+
+      if (!currentFolder) {
+        currentFolder = await prisma.folder.create({
+          data: {
+            userId,
+            name,
+            parentId,
+            icon: icon || "📁",
+            color: color || "#3B82F6"
+          }
+        });
+      }
+
+      parentId = currentFolder.id;
+    }
+
+    return currentFolder;
+  }
+
+  /* ------------------------------------------------------------------
+     2. Função: create_folder_path
+     ------------------------------------------------------------------ */
+  static async createFolderPath(userId: string, args: any) {
+    const { path, icon, color } = args;
+
+    const finalFolder = await this.resolveFolderPath(userId, path, icon, color);
+
+    return {
+      success: true,
+      folder: finalFolder,
+      message: `📁 Estrutura criada: ${path}`
+    };
+  }
+
+  /* ------------------------------------------------------------------
+     3. Função: add_item_to_path
+     ------------------------------------------------------------------ */
+  static async addItemToPath(userId: string, args: any) {
+    const { path, title, content, itemType, tags = [] } = args;
+
+    const folder = await this.resolveFolderPath(userId, path);
+
+    const item = await prisma.folderItem.create({
+      data: {
+        folderId: folder.id,
+        userId,
+        title,
+        content,
+        itemType,
+        tags
+      },
+      include: {
+        folder: true
+      }
+    });
+
+    return {
+      success: true,
+      folder,
+      item,
+      message: `📝 Item "${title}" adicionado em ${path}`
+    };
+  }
+
+
   private static getIconForType(itemType?: string): string {
     const iconMap: Record<string, string> = {
       'compra': '🛒',
@@ -414,18 +475,15 @@ export class WorkspaceHandlers {
     return iconMap[itemType?.toLowerCase() || ''] || '📁';
   }
 
-  /**
-   * 🎨 Helper: Define cor baseado no tipo do item
-   */
   private static getColorForType(itemType?: string): string {
     const colorMap: Record<string, string> = {
-      'compra': '#10B981',      // verde
-      'evento': '#8B5CF6',      // roxo
-      'tarefa': '#3B82F6',      // azul
-      'nota': '#F59E0B',        // laranja
-      'fornecedor': '#6366F1',  // indigo
-      'pagamento': '#EF4444',   // vermelho
-      'contrato': '#06B6D4'     // cyan
+      'compra': '#10B981',
+      'evento': '#8B5CF6',
+      'tarefa': '#3B82F6',
+      'nota': '#F59E0B',
+      'fornecedor': '#6366F1',
+      'pagamento': '#EF4444',
+      'contrato': '#06B6D4'
     };
 
     return colorMap[itemType?.toLowerCase() || ''] || '#3B82F6';
