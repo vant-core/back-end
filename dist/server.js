@@ -14,6 +14,7 @@ const logger_config_1 = __importDefault(require("./config/security/logger.config
 const file_routes_1 = __importDefault(require("./routes/file.routes"));
 const workspace_routes_1 = __importDefault(require("./routes/workspace.routes"));
 const auth_midd_1 = __importDefault(require("./middlewares/auth.midd"));
+const report_routes_1 = __importDefault(require("./routes/report.routes"));
 const app = (0, express_1.default)();
 // Log inicial do servidor
 console.log("SERVER_STARTING", {
@@ -35,6 +36,7 @@ app.use('/api/ai', ai_routes_1.default);
 app.use("/api/event", eventRegistration_routes_1.default);
 app.use('/api/files', file_routes_1.default);
 app.use("/api/workspace", auth_midd_1.default, workspace_routes_1.default);
+app.use('/api/reports', auth_midd_1.default, report_routes_1.default);
 // Healthcheck
 app.get('/health', (req, res) => {
     res.json({
@@ -45,6 +47,7 @@ app.get('/health', (req, res) => {
 });
 // Error middleware (sempre por último)
 app.use(error_midd_1.default);
+//
 // Porta do Render
 const PORT = process.env.PORT || 3000;
 //

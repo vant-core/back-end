@@ -38,25 +38,21 @@ class WorkspaceHandlers {
      * 🔥 Adiciona um item em uma pasta (cria a pasta se não existir)
      */
     static async addItemToFolder(userId, args) {
-        const { folderName, title, content = {}, // 🔥 DEFAULT: objeto vazio se não vier
-        itemType, tags = [] } = args;
-        // 🔥 VALIDAÇÃO: garantir que content seja um objeto
+        const { folderName, title, content = {}, itemType, tags = [] } = args;
         const safeContent = typeof content === 'object' && content !== null
             ? content
             : { data: String(content) };
         console.log("📦 addItemToFolder chamado com:", { folderName, title, content: safeContent, itemType, tags });
         try {
-            // 1. Buscar pasta existente
             let folder = await database_1.default.folder.findFirst({
                 where: {
                     userId,
                     name: {
                         equals: folderName,
-                        mode: 'insensitive' // case-insensitive
+                        mode: 'insensitive'
                     }
                 }
             });
-            // 2. Se não existir, criar automaticamente
             if (!folder) {
                 folder = await database_1.default.folder.create({
                     data: {
@@ -67,13 +63,12 @@ class WorkspaceHandlers {
                     }
                 });
             }
-            // 3. Criar o item
             const item = await database_1.default.folderItem.create({
                 data: {
                     folderId: folder.id,
                     userId,
                     title,
-                    content: safeContent, // 🔥 GARANTIDO QUE É UM OBJETO
+                    content: safeContent,
                     itemType,
                     tags
                 },
@@ -152,7 +147,6 @@ class WorkspaceHandlers {
     static async getFolderItems(userId, args) {
         const { folderId } = args;
         try {
-            // Verificar se a pasta pertence ao usuário
             const folder = await database_1.default.folder.findFirst({
                 where: {
                     id: folderId,
@@ -165,7 +159,6 @@ class WorkspaceHandlers {
                     message: "❌ Pasta não encontrada"
                 };
             }
-            // Buscar items
             const items = await database_1.default.folderItem.findMany({
                 where: {
                     folderId,
@@ -205,7 +198,6 @@ class WorkspaceHandlers {
                 },
                 orderBy: { createdAt: 'desc' }
             });
-            // Transformar para formato mais amigável
             const formattedFolders = folders.map(folder => ({
                 ...folder,
                 itemCount: folder._count.items
@@ -227,7 +219,6 @@ class WorkspaceHandlers {
         const { query, folderName, tags } = args;
         try {
             const whereClause = { userId };
-            // Filtrar por pasta
             if (folderName) {
                 const folder = await database_1.default.folder.findFirst({
                     where: {
@@ -242,13 +233,11 @@ class WorkspaceHandlers {
                     whereClause.folderId = folder.id;
                 }
             }
-            // Filtrar por tags
             if (tags && tags.length > 0) {
                 whereClause.tags = {
                     hasSome: tags
                 };
             }
-            // Buscar items
             let items = await database_1.default.folderItem.findMany({
                 where: whereClause,
                 include: {
@@ -263,7 +252,6 @@ class WorkspaceHandlers {
                 },
                 orderBy: { createdAt: 'desc' }
             });
-            // Filtrar por query de texto (título ou conteúdo)
             if (query) {
                 items = items.filter(item => {
                     const titleMatch = item.title.toLowerCase().includes(query.toLowerCase());
@@ -283,12 +271,11 @@ class WorkspaceHandlers {
         }
     }
     /**
-     * 🔥 Deleta uma pasta (e seus items)
+     * 🔥 Deleta uma pasta e seus items
      */
     static async deleteFolder(userId, args) {
         const { folderId } = args;
         try {
-            // Verificar se a pasta pertence ao usuário
             const folder = await database_1.default.folder.findFirst({
                 where: {
                     id: folderId,
@@ -301,7 +288,6 @@ class WorkspaceHandlers {
                     message: "❌ Pasta não encontrada ou não pertence ao usuário"
                 };
             }
-            // Deletar pasta (cascade irá deletar os items)
             await database_1.default.folder.delete({
                 where: { id: folderId }
             });
@@ -321,7 +307,6 @@ class WorkspaceHandlers {
     static async deleteItem(userId, args) {
         const { itemId } = args;
         try {
-            // Verificar se o item pertence ao usuário
             const item = await database_1.default.folderItem.findFirst({
                 where: {
                     id: itemId,
@@ -334,7 +319,6 @@ class WorkspaceHandlers {
                     message: "❌ Item não encontrado ou não pertence ao usuário"
                 };
             }
-            // Deletar item
             await database_1.default.folderItem.delete({
                 where: { id: itemId }
             });
@@ -348,9 +332,71 @@ class WorkspaceHandlers {
             throw new Error("Falha ao deletar item");
         }
     }
-    /**
-     * 🎨 Helper: Define ícone baseado no tipo do item
-     */
+    static async resolveFolderPath(userId, path, icon, color) {
+        const segments = path.split("/").map(s => s.trim()).filter(Boolean);
+        let parentId = null;
+        let currentFolder = null;
+        for (const name of segments) {
+            currentFolder = await database_1.default.folder.findFirst({
+                where: {
+                    userId,
+                    name: { equals: name, mode: "insensitive" },
+                    parentId
+                }
+            });
+            if (!currentFolder) {
+                currentFolder = await database_1.default.folder.create({
+                    data: {
+                        userId,
+                        name,
+                        parentId,
+                        icon: icon || "📁",
+                        color: color || "#3B82F6"
+                    }
+                });
+            }
+            parentId = currentFolder.id;
+        }
+        return currentFolder;
+    }
+    /* ------------------------------------------------------------------
+       2. Função: create_folder_path
+       ------------------------------------------------------------------ */
+    static async createFolderPath(userId, args) {
+        const { path, icon, color } = args;
+        const finalFolder = await this.resolveFolderPath(userId, path, icon, color);
+        return {
+            success: true,
+            folder: finalFolder,
+            message: `📁 Estrutura criada: ${path}`
+        };
+    }
+    /* ------------------------------------------------------------------
+       3. Função: add_item_to_path
+       ------------------------------------------------------------------ */
+    static async addItemToPath(userId, args) {
+        const { path, title, content, itemType, tags = [] } = args;
+        const folder = await this.resolveFolderPath(userId, path);
+        const item = await database_1.default.folderItem.create({
+            data: {
+                folderId: folder.id,
+                userId,
+                title,
+                content,
+                itemType,
+                tags
+            },
+            include: {
+                folder: true
+            }
+        });
+        return {
+            success: true,
+            folder,
+            item,
+            message: `📝 Item "${title}" adicionado em ${path}`
+        };
+    }
     static getIconForType(itemType) {
         const iconMap = {
             'compra': '🛒',
@@ -363,18 +409,15 @@ class WorkspaceHandlers {
         };
         return iconMap[itemType?.toLowerCase() || ''] || '📁';
     }
-    /**
-     * 🎨 Helper: Define cor baseado no tipo do item
-     */
     static getColorForType(itemType) {
         const colorMap = {
-            'compra': '#10B981', // verde
-            'evento': '#8B5CF6', // roxo
-            'tarefa': '#3B82F6', // azul
-            'nota': '#F59E0B', // laranja
-            'fornecedor': '#6366F1', // indigo
-            'pagamento': '#EF4444', // vermelho
-            'contrato': '#06B6D4' // cyan
+            'compra': '#10B981',
+            'evento': '#8B5CF6',
+            'tarefa': '#3B82F6',
+            'nota': '#F59E0B',
+            'fornecedor': '#6366F1',
+            'pagamento': '#EF4444',
+            'contrato': '#06B6D4'
         };
         return colorMap[itemType?.toLowerCase() || ''] || '#3B82F6';
     }

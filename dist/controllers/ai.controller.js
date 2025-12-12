@@ -28,6 +28,11 @@ class AIController {
             // 🔥 Chamada para a IA (agora com userId)
             const aiResponse = await openAi_service_1.default.chat(message, userId, // 🔥 NOVO: passa userId
             conversationHistory);
+            console.log('🔍 AIController - Resposta recebida:', {
+                hasFile: !!aiResponse.file,
+                hasWorkspace: !!aiResponse.workspace,
+                hasReport: !!aiResponse.report // 🔥 NOVO
+            });
             // 🔥 CASO 1: ARQUIVO GERADO
             if (aiResponse.file) {
                 const messageContent = `${aiResponse.content}\n\n📎 Arquivo: ${aiResponse.file.name}.${aiResponse.file.type}`;
@@ -43,7 +48,22 @@ class AIController {
                 });
                 return;
             }
-            // 🔥 CASO 2: AÇÃO DE WORKSPACE
+            // 🔥 CASO 2: RELATÓRIO GERADO (NOVO)
+            if (aiResponse.report) {
+                console.log('📊 AIController - Relatório detectado, enviando ao frontend');
+                await conversation_service_1.default.addMessage(conversation.id, userId, 'assistant', aiResponse.content);
+                res.json({
+                    success: true,
+                    data: {
+                        conversationId: conversation.id,
+                        message: aiResponse.content,
+                        report: aiResponse.report, // 🔥 Dados do relatório (HTML + data)
+                        usage: aiResponse.usage
+                    }
+                });
+                return;
+            }
+            // 🔥 CASO 3: AÇÃO DE WORKSPACE
             if (aiResponse.workspace) {
                 await conversation_service_1.default.addMessage(conversation.id, userId, 'assistant', aiResponse.content);
                 res.json({
@@ -57,7 +77,7 @@ class AIController {
                 });
                 return;
             }
-            // 🔥 CASO 3: RESPOSTA NORMAL
+            // 🔥 CASO 4: RESPOSTA NORMAL
             await conversation_service_1.default.addMessage(conversation.id, userId, 'assistant', aiResponse.content);
             res.json({
                 success: true,
@@ -128,5 +148,4 @@ class AIController {
         }
     }
 }
-//
 exports.default = new AIController();
