@@ -1327,3 +1327,7 @@
 {"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:34:25"}
 {"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:34:49"}
 {"level":"info","message":"CORS request from origin: http://localhost:3001","service":"perplexity-api","timestamp":"2025-12-12 17:35:38"}
+{"level":"info","message":"🔒 Aplicando configurações de segurança...","service":"perplexity-api","timestamp":"2025-12-12 17:44:21"}
+{"0":"http://localhost:3001","1":"https://front-vant.vercel.app","level":"info","message":"CORS allowed origins:","service":"perplexity-api","timestamp":"2025-12-12 17:44:21"}
+{"level":"info","message":"✅ Configurações de segurança aplicadas com sucesso","service":"perplexity-api","timestamp":"2025-12-12 17:44:21"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3000 em modo development","service":"perplexity-api","timestamp":"2025-12-12 17:44:21"}
