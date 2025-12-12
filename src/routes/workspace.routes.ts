@@ -49,9 +49,7 @@ router.get("/folders", authMiddleware, async (req: AuthRequest, res: Response, n
   }
 });
 
-/* ============================================================
-   GET /api/workspace/folders/:id  → Pasta com todos os itens
-   ============================================================ */
+
 router.get("/folders/:id", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
