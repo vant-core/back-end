@@ -1,43 +1,33 @@
-// src/routes/workspace.routes.ts
-
 import { Router } from "express";
 import { Response, NextFunction } from "express";
 import { AuthRequest } from "../types/user";
 import prisma from "../config/database";
 import logger from "../config/security/logger.config";
 import cacheManager from "../config/security/cache.config";
+import authMiddleware from "../middlewares/auth.midd";
+import { WorkspaceHandlers } from "../services/ai/workspaceHandlers";
 
 const router = Router();
 
-/**
- * 🔥 GET /api/workspace/folders
- * Lista todas as pastas do usuário com contagem de items
- */
-router.get("/folders", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   GET /api/workspace/folders  → Lista pastas (inclui subpastas)
+   ============================================================ */
+router.get("/folders", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
 
-    // Busca pastas com contagem de items
     const folders = await prisma.folder.findMany({
       where: { userId },
       include: {
-        _count: {
-          select: { items: true }
-        },
+        _count: { select: { items: true } },
         subFolders: {
-          select: {
-            id: true,
-            name: true,
-            icon: true,
-            color: true
-          }
+          select: { id: true, name: true, icon: true, color: true, parentId: true }
         }
       },
-      orderBy: { createdAt: 'desc' }
+      orderBy: { createdAt: "desc" }
     });
 
-    // Formatar resposta
-    const formattedFolders = folders.map(folder => ({
+    const formatted = folders.map(folder => ({
       id: folder.id,
       name: folder.name,
       description: folder.description,
@@ -50,14 +40,7 @@ router.get("/folders", async (req: AuthRequest, res: Response, next: NextFunctio
       updatedAt: folder.updatedAt
     }));
 
-    res.json({
-      success: true,
-      data: {
-        folders: formattedFolders,
-        total: formattedFolders.length
-      }
-    });
-
+    res.json({ success: true, data: { folders: formatted, total: formatted.length } });
     logger.info(`Pastas listadas para usuário ${userId}`);
 
   } catch (error) {
@@ -66,46 +49,30 @@ router.get("/folders", async (req: AuthRequest, res: Response, next: NextFunctio
   }
 });
 
-/**
- * 🔥 GET /api/workspace/folders/:id
- * Busca uma pasta específica com seus items
- */
-router.get("/folders/:id", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   GET /api/workspace/folders/:id  → Pasta com todos os itens
+   ============================================================ */
+router.get("/folders/:id", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
     const { id } = req.params;
 
     const folder = await prisma.folder.findFirst({
-      where: {
-        id,
-        userId
-      },
+      where: { id, userId },
       include: {
-        items: {
-          orderBy: { createdAt: 'desc' }
+        items: { orderBy: { createdAt: "desc" } },
+        subFolders: {
+          select: { id: true, name: true, icon: true, color: true, parentId: true }
         },
-        _count: {
-          select: { items: true }
-        }
+        _count: { select: { items: true } }
       }
     });
 
-    if (!folder) {
-      res.status(404).json({
-        success: false,
-        message: "Pasta não encontrada"
-      });
-      return;
-    }
+    if (!folder) return res.status(404).json({ success: false, message: "Pasta não encontrada" });
 
     res.json({
       success: true,
-      data: {
-        folder: {
-          ...folder,
-          itemCount: folder._count.items
-        }
-      }
+      data: { folder: { ...folder, itemCount: folder._count.items } }
     });
 
   } catch (error) {
@@ -114,57 +81,56 @@ router.get("/folders/:id", async (req: AuthRequest, res: Response, next: NextFun
   }
 });
 
-/**
- * 🔥 GET /api/workspace/items
- * Lista todos os items do usuário (com filtros opcionais)
- */
-router.get("/items", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   🔥 NOVO
+   POST /api/workspace/folders/path
+   Cria estrutura profunda: "Eventos/Coca-Cola/Financeiro"
+   ============================================================ */
+router.post("/folders/path", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
+  try {
+    const userId = req.user!.id;
+    const { path, icon, color } = req.body;
+
+    const result = await WorkspaceHandlers.createFolderPath(userId, { path, icon, color });
+
+    res.json({ success: true, data: result });
+
+  } catch (error) {
+    logger.error("Erro ao criar caminho de pastas:", error);
+    next(error);
+  }
+});
+
+/* ============================================================
+   GET /api/workspace/items  → lista todos ou filtra por query
+   ============================================================ */
+router.get("/items", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
     const { folderId, itemType, search } = req.query;
 
-    const whereClause: any = { userId };
+    const where: any = { userId };
 
-    if (folderId) {
-      whereClause.folderId = folderId as string;
-    }
-
-    if (itemType) {
-      whereClause.itemType = itemType as string;
-    }
+    if (folderId) where.folderId = folderId;
+    if (itemType) where.itemType = itemType;
 
     let items = await prisma.folderItem.findMany({
-      where: whereClause,
+      where,
       include: {
-        folder: {
-          select: {
-            id: true,
-            name: true,
-            icon: true,
-            color: true
-          }
-        }
+        folder: { select: { id: true, name: true, icon: true, color: true } }
       },
-      orderBy: { createdAt: 'desc' }
+      orderBy: { createdAt: "desc" }
     });
 
-    // Filtro de busca por texto (se fornecido)
-    if (search && typeof search === 'string') {
-      const searchLower = search.toLowerCase();
-      items = items.filter(item => {
-        const titleMatch = item.title.toLowerCase().includes(searchLower);
-        const contentMatch = JSON.stringify(item.content).toLowerCase().includes(searchLower);
-        return titleMatch || contentMatch;
-      });
+    if (search && typeof search === "string") {
+      const q = search.toLowerCase();
+      items = items.filter(i =>
+        i.title.toLowerCase().includes(q) ||
+        JSON.stringify(i.content).toLowerCase().includes(q)
+      );
     }
 
-    res.json({
-      success: true,
-      data: {
-        items,
-        total: items.length
-      }
-    });
+    res.json({ success: true, data: { items, total: items.length } });
 
   } catch (error) {
     logger.error("Erro ao listar items:", error);
@@ -172,37 +138,22 @@ router.get("/items", async (req: AuthRequest, res: Response, next: NextFunction)
   }
 });
 
-/**
- * 🔥 GET /api/workspace/items/:id
- * Busca um item específico
- */
-router.get("/items/:id", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   GET /api/workspace/items/:id
+   ============================================================ */
+router.get("/items/:id", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
     const { id } = req.params;
 
     const item = await prisma.folderItem.findFirst({
-      where: {
-        id,
-        userId
-      },
-      include: {
-        folder: true
-      }
+      where: { id, userId },
+      include: { folder: true }
     });
 
-    if (!item) {
-      res.status(404).json({
-        success: false,
-        message: "Item não encontrado"
-      });
-      return;
-    }
+    if (!item) return res.status(404).json({ success: false, message: "Item não encontrado" });
 
-    res.json({
-      success: true,
-      data: { item }
-    });
+    res.json({ success: true, data: { item } });
 
   } catch (error) {
     logger.error("Erro ao buscar item:", error);
@@ -210,43 +161,39 @@ router.get("/items/:id", async (req: AuthRequest, res: Response, next: NextFunct
   }
 });
 
-/**
- * 🔥 DELETE /api/workspace/folders/:id
- * Deleta uma pasta (e seus items via cascade)
- */
-router.delete("/folders/:id", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   🔥 NOVO
+   POST /api/workspace/items/path
+   Adicionar item a subpasta profunda
+   ============================================================ */
+router.post("/items/path", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
+  try {
+    const userId = req.user!.id;
+    const result = await WorkspaceHandlers.addItemToPath(userId, req.body);
+
+    res.json({ success: true, data: result });
+
+  } catch (error) {
+    logger.error("Erro ao criar item por caminho:", error);
+    next(error);
+  }
+});
+
+/* ============================================================
+   DELETE pasta
+   ============================================================ */
+router.delete("/folders/:id", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
     const { id } = req.params;
 
-    const folder = await prisma.folder.findFirst({
-      where: {
-        id,
-        userId
-      }
-    });
+    const folder = await prisma.folder.findFirst({ where: { id, userId } });
+    if (!folder) return res.status(404).json({ success: false, message: "Pasta não encontrada" });
 
-    if (!folder) {
-      res.status(404).json({
-        success: false,
-        message: "Pasta não encontrada"
-      });
-      return;
-    }
-
-    await prisma.folder.delete({
-      where: { id }
-    });
-
-    // Limpa cache
+    await prisma.folder.delete({ where: { id } });
     cacheManager.delete(`cache:${userId}:/api/workspace/folders`);
 
-    res.json({
-      success: true,
-      message: `Pasta "${folder.name}" deletada com sucesso`
-    });
-
-    logger.info(`Pasta ${id} deletada pelo usuário ${userId}`);
+    res.json({ success: true, message: `Pasta "${folder.name}" deletada` });
 
   } catch (error) {
     logger.error("Erro ao deletar pasta:", error);
@@ -254,43 +201,21 @@ router.delete("/folders/:id", async (req: AuthRequest, res: Response, next: Next
   }
 });
 
-/**
- * 🔥 DELETE /api/workspace/items/:id
- * Deleta um item específico
- */
-router.delete("/items/:id", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   DELETE item
+   ============================================================ */
+router.delete("/items/:id", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
     const { id } = req.params;
 
-    const item = await prisma.folderItem.findFirst({
-      where: {
-        id,
-        userId
-      }
-    });
+    const item = await prisma.folderItem.findFirst({ where: { id, userId } });
+    if (!item) return res.status(404).json({ success: false, message: "Item não encontrado" });
 
-    if (!item) {
-      res.status(404).json({
-        success: false,
-        message: "Item não encontrado"
-      });
-      return;
-    }
+    await prisma.folderItem.delete({ where: { id } });
 
-    await prisma.folderItem.delete({
-      where: { id }
-    });
-
-    // Limpa cache
     cacheManager.delete(`cache:${userId}:/api/workspace/items`);
-
-    res.json({
-      success: true,
-      message: "Item deletado com sucesso"
-    });
-
-    logger.info(`Item ${id} deletado pelo usuário ${userId}`);
+    res.json({ success: true, message: "Item deletado com sucesso" });
 
   } catch (error) {
     logger.error("Erro ao deletar item:", error);
@@ -298,11 +223,10 @@ router.delete("/items/:id", async (req: AuthRequest, res: Response, next: NextFu
   }
 });
 
-/**
- * 🔥 GET /api/workspace/stats
- * Estatísticas do workspace do usuário
- */
-router.get("/stats", async (req: AuthRequest, res: Response, next: NextFunction) => {
+/* ============================================================
+   /stats
+   ============================================================ */
+router.get("/stats", authMiddleware, async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!.id;
 
@@ -310,7 +234,7 @@ router.get("/stats", async (req: AuthRequest, res: Response, next: NextFunction)
       prisma.folder.count({ where: { userId } }),
       prisma.folderItem.count({ where: { userId } }),
       prisma.folderItem.groupBy({
-        by: ['itemType'],
+        by: ["itemType"],
         where: { userId },
         _count: true
       })
@@ -321,15 +245,15 @@ router.get("/stats", async (req: AuthRequest, res: Response, next: NextFunction)
       data: {
         totalFolders,
         totalItems,
-        itemsByType: itemsByType.map(item => ({
-          type: item.itemType || 'sem_tipo',
-          count: item._count
+        itemsByType: itemsByType.map(i => ({
+          type: i.itemType || "sem_tipo",
+          count: i._count
         }))
       }
     });
 
   } catch (error) {
-    logger.error("Erro ao buscar estatísticas:", error);
+    logger.error("Erro nas estatísticas:", error);
     next(error);
   }
 });
