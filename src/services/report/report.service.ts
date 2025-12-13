@@ -23,14 +23,17 @@ class ReportService {
    * Gera PDF a partir do HTML usando Puppeteer
    */
   async generatePDF(html: string): Promise<Buffer> {
-     const puppeteer = await import("puppeteer");
+  // 🔥 força o TS a ignorar totalmente o puppeteer
+  // @ts-ignore
+  const puppeteer = require("puppeteer");
 
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: "new",
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
-  try {
-  const page = await browser.newPage();
+
+    try {
+      const page = await browser.newPage();
 
       await page.setContent(html, {
         waitUntil: 'networkidle0'
