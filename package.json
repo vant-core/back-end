@@ -49,6 +49,7 @@
     "@types/multer": "^2.0.0",
     "@types/node": "^20.10.5",
     "@types/pdfkit": "^0.17.4",
+    "@types/puppeteer": "^5.4.7",
     "@types/xlsx": "^0.0.35",
     "prisma": "^5.22.0",
     "ts-node-dev": "^2.0.0",
