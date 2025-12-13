@@ -1,5 +1,4 @@
 // src/services/report/report.service.ts
-import puppeteer from 'puppeteer';
 import { reportTemplate } from '../../template/report.template';
 import { ReportData, ReportConfig } from '../../types/user';
 
@@ -24,13 +23,14 @@ class ReportService {
    * Gera PDF a partir do HTML usando Puppeteer
    */
   async generatePDF(html: string): Promise<Buffer> {
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
+     const puppeteer = await import("puppeteer");
 
-    try {
-      const page = await browser.newPage();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+  try {
+  const page = await browser.newPage();
 
       await page.setContent(html, {
         waitUntil: 'networkidle0'
