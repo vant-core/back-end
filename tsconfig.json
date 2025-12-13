@@ -24,7 +24,7 @@
     /* ---- CONFIGURAÇÕES GERAIS ---- */
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "declaration": false
   },
   "include": ["src/**/*"],
