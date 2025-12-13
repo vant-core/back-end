@@ -1,5 +1,5 @@
 // src/services/report/report.service.ts
-import * as puppeteer from "puppeteer";
+import puppeteer from 'puppeteer';
 import { reportTemplate } from '../../template/report.template';
 import { ReportData, ReportConfig } from '../../types/user';
 
