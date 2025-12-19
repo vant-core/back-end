@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const report_service_1 = __importDefault(require("../services/report/report.service"));
+const report_service_1 = __importDefault(require("../services/report.service"));
 const reportHandlers_1 = __importDefault(require("../services/report/reportHandlers"));
 class ReportController {
     /**

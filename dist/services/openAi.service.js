@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
 const openAi_config_1 = __importDefault(require("../config/openAi.config"));
 const fileGenerator_service_1 = __importDefault(require("../services/fileGenerator.service"));
-const workspaceHandlers_1 = require("./ai/workspaceHandlers");
+const workspaceHandlers_1 = require("./workspace/workspaceHandlers");
 const reportHandlers_1 = __importDefault(require("../services/report/reportHandlers"));
 const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));

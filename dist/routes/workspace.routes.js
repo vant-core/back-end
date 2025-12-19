@@ -8,7 +8,7 @@ const database_1 = __importDefault(require("../config/database"));
 const logger_config_1 = __importDefault(require("../config/security/logger.config"));
 const cache_config_1 = __importDefault(require("../config/security/cache.config"));
 const auth_midd_1 = __importDefault(require("../middlewares/auth.midd"));
-const workspaceHandlers_1 = require("../services/ai/workspaceHandlers");
+const workspaceHandlers_1 = require("../services/workspace/workspaceHandlers");
 const router = (0, express_1.Router)();
 /* ============================================================
    GET /api/workspace/folders  → Lista pastas (inclui subpastas)

@@ -30,7 +30,8 @@ process.on('uncaughtException', (error) => {
 });
 // Aplicar configurações de segurança
 security_config_1.default.applyAll(app);
-// Rotas
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: false })); // importante para Twilio
 app.use('/api/auth', auth_routes_1.default);
 app.use('/api/ai', ai_routes_1.default);
 app.use("/api/event", eventRegistration_routes_1.default);
