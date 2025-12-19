@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { JWTPayload } from '../types/user';
+import { JWTPayload } from '../types';
 
 class JWTUtil {
   static generateToken(payload: JWTPayload): string {

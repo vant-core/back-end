@@ -1,6 +1,6 @@
 // src/controllers/report.controller.ts
 import { Request, Response } from 'express';
-import reportService from '../services/report/report.service';
+import reportService from '../services/report.service';
 import reportHandler from '../services/report/reportHandlers';
 
 interface GenerateReportRequest {

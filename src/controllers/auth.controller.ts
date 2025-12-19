@@ -1,7 +1,7 @@
 import { Response, NextFunction } from 'express';
 import UserService from '../services/user.service';
 import JWTUtil from '../utils/jwt.util';
-import { AuthRequest, RegisterDTO, LoginDTO } from '../types/user';
+import { AuthRequest, RegisterDTO, LoginDTO } from '../types';
 
 class AuthController {
   async register(req: AuthRequest, res: Response, next: NextFunction): Promise<void> {

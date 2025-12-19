@@ -365,3 +365,19 @@ export interface ReportFunctionResult {
   previewUrl?: string;
   error?: string;
 }
+
+export interface ReportSection {
+  title: string;
+  type: ReportSectionType;  // Usando o tipo ReportSectionType aqui
+  content: any;  // Pode ser texto, tabela, lista, dependendo da seção
+}
+
+// Interface para o resumo executivo (input)
+export interface ExecutiveSummaryInput {
+  title?: string;
+  totalItems: number;
+  sections: ReportSection[];
+}
+
+// src/types/whatsapp.ts
+

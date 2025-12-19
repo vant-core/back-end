@@ -1,9 +1,9 @@
 // src/services/openAi.service.ts
 import axios from "axios";
 import openAIConfig from "../config/openAi.config";
-import { OpenAIMessage, OpenAIResponse } from "../types/user";
+import { OpenAIMessage, OpenAIResponse } from "../types";
 import FileGeneratorService from "../services/fileGenerator.service";
-import { WorkspaceHandlers } from "./ai/workspaceHandlers";
+import { WorkspaceHandlers } from "./workspace/workspaceHandlers";
 import reportHandler from "../services/report/reportHandlers";
 import path from "path";
 import fs from "fs";

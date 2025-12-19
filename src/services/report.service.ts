@@ -1,6 +1,6 @@
 // src/services/report/report.service.ts
-import { reportTemplate } from '../../template/report.template';
-import { ReportData, ReportConfig } from '../../types/user';
+import { reportTemplate } from '../template/report.template';
+import { ReportData, ReportConfig } from '../types';
 
 class ReportService {
   private defaultConfig: ReportConfig = {

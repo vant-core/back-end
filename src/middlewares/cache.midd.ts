@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import cacheManager from '../config/security/cache.config';
-import { AuthRequest } from '../types/user';
+import { AuthRequest } from '../types';
 
 export const cacheMiddleware = (ttl?: number) => {
   return (req: AuthRequest, res: Response, next: NextFunction): void => {

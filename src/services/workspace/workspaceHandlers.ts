@@ -1,7 +1,7 @@
 // src/services/ai/workspaceHandlers.ts
 
 import prisma from "../../config/database";
-import type { CreateFolderDTO, CreateItemDTO } from "../../types/user";
+import type { CreateFolderDTO, CreateItemDTO } from "../../types";
 
 export class WorkspaceHandlers {
   

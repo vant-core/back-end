@@ -1,6 +1,6 @@
 import { Response } from "express";
 import EventRegistrationService from "../services/eventRegistration.service";
-import { AuthRequest } from "../types/user";
+import { AuthRequest } from "../types";
 
 class EventRegistrationController {
 

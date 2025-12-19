@@ -9,7 +9,6 @@ import logger from './config/security/logger.config';
 import fileRoutes from './routes/file.routes';
 import workspaceRoutes from "./routes/workspace.routes";
 import authMiddleware from './middlewares/auth.midd';
-import { report } from 'process';
 import reportRoutes from './routes/report.routes';
 
 const app: Application = express();
@@ -32,7 +31,11 @@ process.on('uncaughtException', (error: Error) => {
 // Aplicar configurações de segurança
 SecurityConfig.applyAll(app);
 
-// Rotas
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false })); // importante para Twilio
+
+
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiRoutes);
 app.use("/api/event", eventRegistrationRoutes);

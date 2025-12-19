@@ -1,7 +1,7 @@
 import { Response, NextFunction } from 'express';
 import JWTUtil from '../utils/jwt.util';
 import prisma from '../config/database';
-import { AuthRequest } from '../types/user';
+import { AuthRequest } from '../types';
 
 const authMiddleware = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
   try {

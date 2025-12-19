@@ -1,7 +1,7 @@
 import { Response, NextFunction } from 'express';
 import PerplexityService from '../services/openAi.service';
 import ConversationService from '../services/conversation.service';
-import { AuthRequest, ChatMessageDTO } from '../types/user';
+import { AuthRequest, ChatMessageDTO } from '../types';
 import SecurityConfig from '../config/security/security.config';
 import logger from '../config/security/logger.config';
 import cacheManager from '../config/security/cache.config';

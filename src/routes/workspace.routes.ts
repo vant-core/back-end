@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { Response, NextFunction } from "express";
-import { AuthRequest } from "../types/user";
+import { AuthRequest } from "../types";
 import prisma from "../config/database";
 import logger from "../config/security/logger.config";
 import cacheManager from "../config/security/cache.config";
 import authMiddleware from "../middlewares/auth.midd";
-import { WorkspaceHandlers } from "../services/ai/workspaceHandlers";
+import { WorkspaceHandlers } from "../services/workspace/workspaceHandlers";
 
 const router = Router();
 

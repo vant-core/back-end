@@ -19,7 +19,7 @@ router.post(
 router.get(
   '/conversations', 
   authMiddleware, 
-  cacheMiddleware(300000), // Cache de 5 minutos
+  cacheMiddleware(300000), 
   AIController.getConversations
 );
 
