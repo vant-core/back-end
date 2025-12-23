@@ -50,7 +50,7 @@ class SecurityConfig {
   static configureCORS(app: Application): void {
     const defaultOrigins = [
       'http://localhost:3001',
-      'https://front-vant-mvp.vercel.app'
+      'https://front-vant-mvp.vercel.app/'
     ];
     
     const envOrigins = process.env.CORS_ORIGIN
