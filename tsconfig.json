@@ -5,7 +5,6 @@
     "lib": ["ES2020"],
     "outDir": "./dist",
     "rootDir": "./src",
-    "ignoreDeprecations": "6.0",
 
     /* ---- RELAXAR O TS E NÃO QUEBRAR BUILD ---- */
     "strict": false,
