@@ -13,7 +13,6 @@ import reportRoutes from './routes/report.routes';
 
 const app: Application = express();
 
-SecurityConfig.applyAll(app);
 // Log inicial do servidor
 console.log("SERVER_STARTING", {
   node: process.version,
@@ -30,6 +29,7 @@ process.on('uncaughtException', (error: Error) => {
 });
 
 // Aplicar configurações de segurança
+SecurityConfig.applyAll(app);
 
 
 app.use(express.json());
