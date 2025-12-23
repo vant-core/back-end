@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import OpenAI from "openai";
 import { ReportSection, ExecutiveSummaryInput } from "../../types";
 
